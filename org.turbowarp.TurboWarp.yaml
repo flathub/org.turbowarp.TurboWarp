@@ -23,12 +23,13 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: db0e0b1d18a3b4d49ec04c45366e008f4d6bcbd0
+        commit: 957097fa6bb2197db19f90cc694178562dbf8f0c
       - type: script
         dest-filename: run.sh
         commands:
           - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
-      - asset-sources.json
+      - library-sources.json
+      - packager-sources.json
       - generated-sources.json
     build-options:
       env:
@@ -37,6 +38,11 @@ modules:
         npm_config_nodedir: /usr/lib/sdk/node14
         npm_config_offline: 'true'
     build-commands:
+      - brotli uncompressed/library-files/*
+      - mkdir -p static/library-files
+      - mv uncompressed/library-files/*.br static/library-files
+      - brotli uncompressed/packager.html
+      - mv uncompressed/packager.html.br static
       - npm ci --offline
       - |
         . ./flatpak-node/electron-builder-arch-args.sh
