@@ -38,16 +38,16 @@ modules:
         npm_config_nodedir: /usr/lib/sdk/node14
         npm_config_offline: 'true'
     build-commands:
+      - brotli uncompressed/library-files/*
+      - mkdir -p static/library-files
+      - mv uncompressed/library-files/*.br static/library-files
+      - brotli uncompressed/packager.html
+      - mv uncompressed/packager.html.br static
       - npm ci --offline
       - |
         . ./flatpak-node/electron-builder-arch-args.sh
         npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
       - cp -a dist/linux*unpacked /app/turbowarp
-      - brotli uncompressed/packager.html
-      - brotli uncompressed/library-files/*
-      - mv uncompressed/packager.html.br static
-      - mkdir -p static/library-files
-      - mv uncompressed/library-files/*.br static/library-files
       - install -Dm755 run.sh /app/bin/turbowarp-desktop
       - install -Dm644 static/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
       - install -Dm644 linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
