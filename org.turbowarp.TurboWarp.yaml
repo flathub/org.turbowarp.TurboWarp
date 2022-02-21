@@ -23,7 +23,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: 1e81281e65d20393eecab1eb8351005a9323aad0
+        commit: 1f012e4416bd369fbe3408ade139896e339d3331
       - type: script
         dest-filename: run.sh
         commands:
