@@ -5531,6 +5531,13 @@
     },
     {
         "type": "file",
+        "url": "https://assets.scratch.mit.edu/9546f547835649c415959fc86c9a1717.svg",
+        "sha256": "fbe73a9ae004e09243c6d822e20ff739e2964fb4087e72dc2032d6de8493f1dd",
+        "dest": "uncompressed/library-files",
+        "dest-filename": "9546f547835649c415959fc86c9a1717.svg"
+    },
+    {
+        "type": "file",
         "url": "https://assets.scratch.mit.edu/962201a2b712a302fb087f8f0dcb2076.png",
         "sha256": "a473a171547da99253d21991e0e3909ed8703b8286fed3ca5c205aff5d84b5cb",
         "dest": "uncompressed/library-files",
