@@ -1,8 +1,8 @@
 [
     {
         "type": "file",
-        "url": "https://github.com/TurboWarp/packager/releases/download/v1.6.0/turbowarp-packager-standalone-1.6.0.html",
-        "sha256": "a7dbb02163848ab6bac50863347d76d5bd836656072371842e97d83a1e99dbfe",
+        "url": "https://github.com/TurboWarp/packager/releases/download/v1.7.0/turbowarp-packager-standalone-1.7.0.html",
+        "sha256": "5afbc3c16c6591e43508afaedcf4dc8154b328b5e5ecca0a164cde46303e7888",
         "dest": "uncompressed",
         "dest-filename": "packager.html"
     }
