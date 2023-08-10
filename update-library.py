@@ -9,7 +9,7 @@ async def get_assets():
 
     async def fetch_asset(md5ext):
       async with semaphore:
-        url = f'https://assets.scratch.mit.edu/{md5ext}'
+        url = f'https://scratch-assets.scratch.org/{md5ext}'
         print(f'Downloading {url}')
         async with session.get(url) as resp:
           content = await resp.content.read()
