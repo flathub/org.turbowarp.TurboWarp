@@ -1,9 +1,9 @@
 [
     {
         "type": "file",
-        "url": "https://github.com/TurboWarp/packager/releases/download/v1.8.0/turbowarp-packager-standalone-1.8.0.html",
-        "sha256": "aea16dcafdff7a3fea9f247e74d0df7971f1182544993c48d6456ed89d45a372",
-        "dest": "uncompressed",
-        "dest-filename": "packager.html"
+        "url": "https://github.com/TurboWarp/packager/releases/download/v1.9.2/turbowarp-packager-standalone-1.9.2.html",
+        "sha256": "01ceab8ecd256cd3480a0a1b29a0681397bf08040035fa9709bcc2a99d840041",
+        "dest": "src-renderer/packager",
+        "dest-filename": "standalone.html"
     }
 ]

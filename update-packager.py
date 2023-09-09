@@ -16,8 +16,8 @@ def get_packager():
     'type': 'file',
     'url': packager['src'],
     'sha256': packager['sha256'],
-    'dest': 'uncompressed',
-    'dest-filename': 'packager.html'
+    'dest': 'src-renderer/packager',
+    'dest-filename': 'standalone.html'
   }
 
 sources = [get_packager()]

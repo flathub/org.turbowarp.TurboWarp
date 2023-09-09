@@ -23,7 +23,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: 07a368f4f0ae6140af21a105a11cf65083a390ce
+        commit: 6e987c526ae97558be2b767d8f40afa05b6beafe
       - type: script
         dest-filename: run.sh
         commands:
@@ -38,19 +38,18 @@ modules:
         npm_config_nodedir: /usr/lib/sdk/node14
         npm_config_offline: 'true'
     build-commands:
-      - brotli uncompressed/library-files/*
-      - mkdir -p static/library-files
-      - mv uncompressed/library-files/*.br static/library-files
-      - brotli uncompressed/packager.html
-      - mv uncompressed/packager.html.br static
+      - brotli -v uncompressed-library-files/*
+      - mkdir -p dist-library-files
+      - mv uncompressed-library-files/*.br dist-library-files
       - npm ci --offline
       - node scripts/prepare-extensions.js
+      - NODE_ENV=production npm run webpack:compile
       - |
         . ./flatpak-node/electron-builder-arch-args.sh
-        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
+        npx electron-builder $ELECTRON_BUILDER_ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$(uname -m)"
       - cp -a dist/linux*unpacked /app/turbowarp
       - install -Dm755 run.sh /app/bin/turbowarp-desktop
-      - install -Dm644 static/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
+      - install -Dm644 art/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
       - install -Dm644 linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
       - install -Dm644 linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml

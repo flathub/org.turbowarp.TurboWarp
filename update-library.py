@@ -18,7 +18,7 @@ async def get_assets():
             'type': 'file',
             'url': url,
             'sha256': sha256,
-            'dest': 'uncompressed/library-files',
+            'dest': 'uncompressed-library-files',
             'dest-filename': md5ext
           }
 
