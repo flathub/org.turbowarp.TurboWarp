@@ -43,7 +43,7 @@ modules:
       - mv uncompressed-library-files/*.br dist-library-files
       - npm ci --offline
       - node scripts/prepare-extensions.js
-      - NODE_ENV=production npm run webpack:compile
+      - npm run webpack:prod
       - |
         . ./flatpak-node/electron-builder-arch-args.sh
         npx electron-builder $ELECTRON_BUILDER_ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$(uname -m)"
