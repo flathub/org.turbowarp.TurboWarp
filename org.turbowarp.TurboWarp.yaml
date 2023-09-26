@@ -4,10 +4,6 @@ runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
-build-options:
-  append-path: /usr/lib/sdk/node14/bin
 command: turbowarp-desktop
 separate-locales: false
 finish-args:
@@ -17,7 +13,25 @@ finish-args:
   - --socket=pulseaudio
   - --filesystem=home
   - --device=all
+cleanup:
+  - /node
 modules:
+  - name: node
+    buildsystem: simple
+    sources:
+      - type: archive
+        url: https://nodejs.org/download/release/v14.21.3/node-v14.21.3-linux-x64.tar.xz
+        sha256: 05c08a107c50572ab39ce9e8663a2a2d696b5d262d5bd6f98d84b997ce932d9a
+        only-arches:
+          - x86_64
+      - type: archive
+        url: https://nodejs.org/download/release/v14.21.3/node-v14.21.3-linux-arm64.tar.xz
+        sha256: f06642bfcf0b8cc50231624629bec58b183954641b638e38ed6f94cd39e8a6ef
+        only-arches:
+          - aarch64
+    build-commands:
+      - cp -r . /app/node
+
   - name: turbowarp
     buildsystem: simple
     sources:
@@ -32,10 +46,10 @@ modules:
       - packager-sources.json
       - generated-sources.json
     build-options:
+      append-path: /app/node/bin
       env:
         XDG_CACHE_HOME: /run/build/turbowarp/flatpak-node/cache
         npm_config_cache: /run/build/turbowarp/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node14
         npm_config_offline: 'true'
     build-commands:
       - brotli -v uncompressed-library-files/*
