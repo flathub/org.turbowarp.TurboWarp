@@ -4,10 +4,6 @@ runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '23.08'
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
-build-options:
-  append-path: /usr/lib/sdk/node18/bin
 command: turbowarp-desktop
 separate-locales: false
 finish-args:
@@ -21,36 +17,25 @@ modules:
   - name: turbowarp
     buildsystem: simple
     sources:
-      - type: git
-        url: https://github.com/TurboWarp/desktop.git
-        commit: 9533323a35fa37cb33a19bcaabeba310c72f4505
       - type: script
         dest-filename: run.sh
         commands:
           - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
-      - library-sources.json
-      - packager-sources.json
-      - generated-sources.json
-    build-options:
-      env:
-        XDG_CACHE_HOME: /run/build/turbowarp/flatpak-node/cache
-        npm_config_cache: /run/build/turbowarp/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node14
-        npm_config_offline: 'true'
+      - type: archive
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.10.1/TurboWarp-linux-x64-1.10.1.tar.gz
+        sha256: 0585ac92161057c15bc58a04d32b41fb7d7edd9b6b9c336860c16995ff0a642b
+        dest: linux-unpacked
+        only-arches: [x86_64]
+      - type: archive
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.10.1/TurboWarp-linux-amd64-1.10.1.tar.gz
+        sha256: 4b9d1c4d96ac3fd9c2152b23a09a45bad4e5717e0753eb74aefc4f38bf1d9cc0
+        dest: linux-unpacked
+        only-arches: [arm64]
     build-commands:
-      - brotli -v uncompressed-library-files/*
-      - mkdir -p dist-library-files
-      - mv uncompressed-library-files/*.br dist-library-files
-      - npm ci --offline
-      - node scripts/prepare-extensions.js
-      - npm run webpack:prod
-      - |
-        . ./flatpak-node/electron-builder-arch-args.sh
-        npx electron-builder $ELECTRON_BUILDER_ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$(uname -m)"
-      - cp -a dist/linux*unpacked /app/turbowarp
+      - cp -a linux-unpacked /app/turbowarp
       - install -Dm755 run.sh /app/bin/turbowarp-desktop
-      - install -Dm644 art/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
-      - install -Dm644 linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
+      - install -Dm644 linux-unpacked/resources/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
-      - install -Dm644 linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
-      - install -Dm644 linux-files/org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
