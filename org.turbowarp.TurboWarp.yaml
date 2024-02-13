@@ -27,7 +27,7 @@ modules:
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.10.1/TurboWarp-linux-amd64-1.10.1.tar.gz
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.10.1/TurboWarp-linux-arm64-1.10.1.tar.gz
         sha256: 4b9d1c4d96ac3fd9c2152b23a09a45bad4e5717e0753eb74aefc4f38bf1d9cc0
         dest: linux-unpacked
         only-arches: [aarch64]
