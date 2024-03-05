@@ -31,6 +31,8 @@ modules:
         sha256: 1da05269cfccf84f2cd88f55a28ae9696d34ebef6be29f9cfb203b0dd52f5c4f
         dest: linux-unpacked
         only-arches: [aarch64]
+      - type: file
+        path: org.turbowarp.TurboWarp.metainfo.xml
     build-commands:
       - cp -a linux-unpacked /app/turbowarp
       - install -Dm755 run.sh /app/bin/turbowarp-desktop
@@ -38,4 +40,4 @@ modules:
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
-      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
+      - install -Dm644 org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
