@@ -16,23 +16,21 @@ modules:
   - name: turbowarp
     buildsystem: simple
     sources:
-      - type: script
-        dest-filename: run.sh
-        commands:
-          - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
+      - type: file
+        path: turbowarp-desktop.sh
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.5/TurboWarp-linux-x64-1.11.0-beta.5.tar.gz
-        sha256: b11e3e8f7763964912a682eb83a0914aac7c2421e6079dcdc92fd6963c86ef8d
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.6/TurboWarp-linux-x64-1.11.0-beta.6.tar.gz
+        sha256: c4bf5e428542d853263cdb53cbf05e4f7dbbe8b2c390b14ce2aeb3f721877f55
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.5/TurboWarp-linux-arm64-1.11.0-beta.5.tar.gz
-        sha256: f527aea3da983f4ed745e8e4783ad28fd9e310606a48ce9a931352ef7d21caf3
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.6/TurboWarp-linux-arm64-1.11.0-beta.6.tar.gz
+        sha256: fe5f55f8a1a9aee2619129a4254af175572836f172f91da1b42fedb431f852f2
         dest: linux-unpacked
         only-arches: [aarch64]
     build-commands:
       - cp -a linux-unpacked /app/turbowarp
-      - install -Dm755 run.sh /app/bin/turbowarp-desktop
+      - install -Dm755 turbowarp-desktop.sh /app/bin/turbowarp-desktop
       - install -Dm644 linux-unpacked/resources/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
