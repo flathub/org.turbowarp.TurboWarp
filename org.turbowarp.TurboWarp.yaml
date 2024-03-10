@@ -11,7 +11,6 @@ finish-args:
   - --share=network
   - --socket=x11
   - --socket=pulseaudio
-  - --filesystem=home
   - --device=all
 modules:
   - name: turbowarp
@@ -22,17 +21,15 @@ modules:
         commands:
           - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.3/TurboWarp-linux-x64-1.11.0-beta.3.tar.gz
-        sha256: 82fcd9ef9bcb4412f9acb1e9e5a647aa6b9f704b9f6d148a781fac35971b7959
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.5/TurboWarp-linux-x64-1.11.0-beta.5.tar.gz
+        sha256: b11e3e8f7763964912a682eb83a0914aac7c2421e6079dcdc92fd6963c86ef8d
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.3/TurboWarp-linux-arm64-1.11.0-beta.3.tar.gz
-        sha256: 1da05269cfccf84f2cd88f55a28ae9696d34ebef6be29f9cfb203b0dd52f5c4f
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.5/TurboWarp-linux-arm64-1.11.0-beta.5.tar.gz
+        sha256: f527aea3da983f4ed745e8e4783ad28fd9e310606a48ce9a931352ef7d21caf3
         dest: linux-unpacked
         only-arches: [aarch64]
-      - type: file
-        path: org.turbowarp.TurboWarp.metainfo.xml
     build-commands:
       - cp -a linux-unpacked /app/turbowarp
       - install -Dm755 run.sh /app/bin/turbowarp-desktop
@@ -40,4 +37,4 @@ modules:
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
-      - install -Dm644 org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
