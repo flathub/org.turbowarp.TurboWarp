@@ -21,13 +21,13 @@ modules:
         commands:
           - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.5/TurboWarp-linux-x64-1.11.0-beta.5.tar.gz
-        sha256: b11e3e8f7763964912a682eb83a0914aac7c2421e6079dcdc92fd6963c86ef8d
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0/TurboWarp-linux-x64-1.11.0.tar.gz
+        sha256: 0804454f585eafe915df44f9657a2658a2f25f8ce655f41c934a34b5b52074de
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0-beta.5/TurboWarp-linux-arm64-1.11.0-beta.5.tar.gz
-        sha256: f527aea3da983f4ed745e8e4783ad28fd9e310606a48ce9a931352ef7d21caf3
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0/TurboWarp-linux-arm64-1.11.0.tar.gz
+        sha256: 3dbb59689ff56da368e39972c0c536b5d8e3da1086565064d04b1fed0f8d519f
         dest: linux-unpacked
         only-arches: [aarch64]
     build-commands:
