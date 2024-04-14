@@ -21,15 +21,17 @@ modules:
         commands:
           - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0/TurboWarp-linux-x64-1.11.0.tar.gz
-        sha256: 0804454f585eafe915df44f9657a2658a2f25f8ce655f41c934a34b5b52074de
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.1/TurboWarp-linux-x64-1.11.1.tar.gz
+        sha256: 53e9c3dd946d2a9ad79176243c7e087357538667892629c3926b9b5678bf4add
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.0/TurboWarp-linux-arm64-1.11.0.tar.gz
-        sha256: 3dbb59689ff56da368e39972c0c536b5d8e3da1086565064d04b1fed0f8d519f
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.1/TurboWarp-linux-arm64-1.11.1.tar.gz
+        sha256: b6193c07dbd2b00f7793c7b11b1dec999ba001f60091afc981cd582b0a7f4b8b
         dest: linux-unpacked
         only-arches: [aarch64]
+      - type: file
+        path: org.turbowarp.TurboWarp.metainfo.xml
     build-commands:
       - cp -a linux-unpacked /app/turbowarp
       - install -Dm755 run.sh /app/bin/turbowarp-desktop
@@ -37,4 +39,4 @@ modules:
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
-      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
+      - install -Dm644 org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
