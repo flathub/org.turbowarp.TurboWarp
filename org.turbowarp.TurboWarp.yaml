@@ -12,6 +12,7 @@ finish-args:
   - --socket=x11
   - --socket=pulseaudio
   - --device=all
+  - --filesystem=home
 modules:
   - name: turbowarp
     buildsystem: simple
