@@ -17,10 +17,9 @@ modules:
   - name: turbowarp
     buildsystem: simple
     sources:
-      - type: script
-        dest-filename: run.sh
-        commands:
-          - exec zypak-wrapper /app/turbowarp/turbowarp-desktop "$@"
+      - type: file
+        dest-filename: turbowarp-desktop.sh
+        path: turbowarp-desktop.sh
       - type: archive
         url: https://github.com/TurboWarp/desktop/releases/download/v1.11.1/TurboWarp-linux-x64-1.11.1.tar.gz
         sha256: 53e9c3dd946d2a9ad79176243c7e087357538667892629c3926b9b5678bf4add
@@ -35,7 +34,7 @@ modules:
         path: org.turbowarp.TurboWarp.metainfo.xml
     build-commands:
       - cp -a linux-unpacked /app/turbowarp
-      - install -Dm755 run.sh /app/bin/turbowarp-desktop
+      - install -Dm755 turbowarp-desktop.sh /app/bin/turbowarp-desktop
       - install -Dm644 linux-unpacked/resources/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
