@@ -13,6 +13,8 @@ finish-args:
   - --socket=pulseaudio
   - --device=all
   - --filesystem=home
+  # For Discord Rich Presence
+  - --filesystem=xdg-run/app/com.discordapp.Discord:create
 modules:
   - name: turbowarp
     buildsystem: simple
