@@ -21,13 +21,13 @@ modules:
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.1/TurboWarp-linux-x64-1.11.1.tar.gz
-        sha256: 53e9c3dd946d2a9ad79176243c7e087357538667892629c3926b9b5678bf4add
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.0/TurboWarp-linux-x64-1.12.0.tar.gz
+        sha256: 56ce59216aadbe360ef6e52d976053bb06bc1018f3077511453282b1e2140341
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.11.1/TurboWarp-linux-arm64-1.11.1.tar.gz
-        sha256: b6193c07dbd2b00f7793c7b11b1dec999ba001f60091afc981cd582b0a7f4b8b
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.0/TurboWarp-linux-arm64-1.12.0.tar.gz
+        sha256: 810c76699cef78438ad322b684d2301ca7df43a0fb5dea77891c9a96a331ad11
         dest: linux-unpacked
         only-arches: [aarch64]
       - type: file
