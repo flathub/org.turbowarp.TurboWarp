@@ -40,5 +40,7 @@ modules:
       - install -Dm644 linux-unpacked/resources/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
+      # Fixed upstream in whatever version follows 1.12.0
+      - desktop-file-edit --set-key=StartupWMClass --set-value="turbowarp-desktop" /app/share/applications/org.turbowarp.TurboWarp.desktop
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
       - install -Dm644 org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
