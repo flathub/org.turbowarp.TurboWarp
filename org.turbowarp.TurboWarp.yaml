@@ -11,9 +11,18 @@ finish-args:
   - --share=network
   - --socket=x11
   - --socket=pulseaudio
+  # For webcam and microphone access.
   - --device=all
-  - --filesystem=home
-  # For Discord Rich Presence
+  # For importing costumes, sounds, sprites, or list contents using drag and drop.
+  # Can remove when https://github.com/electron/electron/issues/30650 fixed.
+  # Need read-write access as users can also store projects in these places.
+  # We don't want to use --filesystem=home so instead we're listing the most likely
+  # places for people to drop files from.
+  - --filesystem=xdg-download
+  - --filesystem=xdg-desktop
+  - --filesystem=xdg-pictures
+  - --filesystem=xdg-music
+  # For Discord Rich Presence.
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
 modules:
   - name: turbowarp
