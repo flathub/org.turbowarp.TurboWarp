@@ -23,13 +23,13 @@ modules:
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.0/TurboWarp-linux-x64-1.12.0.tar.gz
-        sha256: 56ce59216aadbe360ef6e52d976053bb06bc1018f3077511453282b1e2140341
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.1/TurboWarp-linux-x64-1.12.1.tar.gz
+        sha256: d9453b9157732ed8321448eb97d941c9021e48d3586f1d84bc9efdbccba340c7
         dest: linux-unpacked
         only-arches: [x86_64]
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.0/TurboWarp-linux-arm64-1.12.0.tar.gz
-        sha256: 810c76699cef78438ad322b684d2301ca7df43a0fb5dea77891c9a96a331ad11
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.1/TurboWarp-linux-arm64-1.12.1.tar.gz
+        sha256: 65778f6e7caf831c4d3c68f86714e4ad9bdf11ba1ac42b1cd254f196be7a7e55
         dest: linux-unpacked
         only-arches: [aarch64]
       - type: file
@@ -40,7 +40,5 @@ modules:
       - install -Dm644 linux-unpacked/resources/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
-      # Fixed upstream in whatever version follows 1.12.0
-      - desktop-file-edit --set-key=StartupWMClass --set-value="turbowarp-desktop" /app/share/applications/org.turbowarp.TurboWarp.desktop
       - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
       - install -Dm644 org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
