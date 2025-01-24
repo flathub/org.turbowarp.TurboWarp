@@ -32,20 +32,39 @@ modules:
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.3/TurboWarp-linux-x64-1.12.3.tar.gz
-        sha256: 92a777c7988835d3edde978dbc33eef2e0bb7b09b99f2bbdda5e1b1fd7d0ae3d
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.13.0/TurboWarp-linux-x64-1.13.0.tar.gz
+        sha256: 87161db551c02cb85f0d7cfcd5ff4769f2bf431fb2aec59df915c39e15e3f536
         dest: linux-unpacked
         only-arches: [x86_64]
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/TurboWarp/desktop/releases/latest
+          version-query: .tag_name[1:]
+          timestamp-query: .published_at
+          url-query: '"https://github.com/TurboWarp/desktop/releases/download/v" +
+            $version + "/TurboWarp-linux-x64-" + $version + ".tar.gz"'
+          is-main-source: true
       - type: archive
-        url: https://github.com/TurboWarp/desktop/releases/download/v1.12.3/TurboWarp-linux-arm64-1.12.3.tar.gz
-        sha256: dd2abcffe83d19020ebc1ef3810dabc7916b0dd5e053f01251289be675e3fc75
+        url: https://github.com/TurboWarp/desktop/releases/download/v1.13.0/TurboWarp-linux-arm64-1.13.0.tar.gz
+        sha256: 02e2c32f0a3d04c3d2a49dc9ae7ad7bcea01118218bcccb03b32947d8771781d
         dest: linux-unpacked
         only-arches: [aarch64]
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/TurboWarp/desktop/releases/latest
+          version-query: .tag_name[1:]
+          timestamp-query: .published_at
+          url-query: '"https://github.com/TurboWarp/desktop/releases/download/v" +
+            $version + "/TurboWarp-linux-arm64-" + $version + ".tar.gz"'
+          is-main-source: true
     build-commands:
       - cp -a linux-unpacked /app/turbowarp
       - install -Dm755 turbowarp-desktop.sh /app/bin/turbowarp-desktop
       - install -Dm644 linux-unpacked/resources/icon.png /app/share/icons/hicolor/512x512/apps/org.turbowarp.TurboWarp.png
-      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop /app/share/applications/org.turbowarp.TurboWarp.desktop
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.desktop
+        /app/share/applications/org.turbowarp.TurboWarp.desktop
       - desktop-file-edit --set-key=Exec --set-value="turbowarp-desktop %U" /app/share/applications/org.turbowarp.TurboWarp.desktop
-      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
-      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.metainfo.xml /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.mime.xml
+        /app/share/mime/packages/org.turbowarp.TurboWarp.mime.xml
+      - install -Dm644 linux-unpacked/linux-files/org.turbowarp.TurboWarp.metainfo.xml
+        /app/share/metainfo/org.turbowarp.TurboWarp.metainfo.xml
