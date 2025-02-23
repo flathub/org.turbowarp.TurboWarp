@@ -38,7 +38,7 @@ const updateSourceCommit = async (desktopCommit) => {
 };
 
 /**
- * @param {url} url
+ * @param {url} url Must be an immutable URL, ie. it includes a hash of some sort.
  * @returns {Promise<Response>}
  */
 const fetchWithCache = async (url) => {
