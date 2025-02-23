@@ -65,19 +65,20 @@ modules:
       - NODE_ENV=production node node_modules/webpack/bin/webpack.js
       # Package Electron
       - |
+        echo: "FLATPAK_ARCH: $FLATPAK_ARCH"
         if [[ "$FLATPAK_ARCH" == "x86_64" ]]; then
           ARCH_ARGS=--x64
         elif [[ "$FLATPAK_ARCH" == "aarch64" ]]; then
           ARCH_ARGS=--arm64
         else
-          echo "Unknown arch: $FLATPAK_ARCH"
+          echo "Unknown arch."
           exit 1
         fi
         export ELECTRON_CACHE=flatpak-electron
         export DEBUG=*
         node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
       # Copy app files
-      - cp -av dist/linux-unpacked /app/turbowarp
+      - cp -av dist/linux*unpacked /app/turbowarp
       # Copy start script
       - install -Dm755 turbowarp-desktop.sh /app/bin/turbowarp-desktop
       # Copy metadata
