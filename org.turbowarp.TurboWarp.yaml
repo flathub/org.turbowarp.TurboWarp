@@ -65,7 +65,7 @@ modules:
       - NODE_ENV=production node node_modules/webpack/bin/webpack.js
       # Package Electron
       - |
-        echo: "FLATPAK_ARCH: $FLATPAK_ARCH"
+        echo "FLATPAK_ARCH: $FLATPAK_ARCH"
         if [[ "$FLATPAK_ARCH" == "x86_64" ]]; then
           ARCH_ARGS=--x64
         elif [[ "$FLATPAK_ARCH" == "aarch64" ]]; then
