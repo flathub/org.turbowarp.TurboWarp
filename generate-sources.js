@@ -3,6 +3,41 @@ import path from 'node:path';
 import nodeCrypto from 'node:crypto';
 
 /**
+ * @returns {Promise<string>}
+ */
+const getMostRecentRelease = async () => {
+    const url = 'https://api.github.com/repos/TurboWarp/desktop/tags';
+    const tagsResponse = await fetch(url);
+    if (!tagsResponse.ok) {
+        throw new Error(`HTTP ${tagsResponse.status} fetching ${url}`);
+    }
+    const tagsJSON = await tagsResponse.json();
+    const mostRecentStable = tagsJSON.find(i => /^v\d+\.\d+\.\d+$/.test(i.name));
+    return mostRecentStable.commit.sha;
+};
+
+/**
+ * @param {string} desktopCommit
+ * @returns {Promise<void>}
+ */
+const updateSourceCommit = async (desktopCommit) => {
+    const manifestName = 'org.turbowarp.TurboWarp.yaml';
+    const manifestPath = path.join(import.meta.dirname, manifestName);
+    const oldContent = await fsPromises.readFile(manifestPath, 'utf-8');
+
+    // Don't want to bring in an entire YAML parser, so we'll just hack this with
+    // a regex and hope for the best.
+    const newCommitLine = `commit: ${desktopCommit}`;
+    const newContent = oldContent.replace(/commit: [0-9a-f]{40}/, newCommitLine);
+    if (!newContent.includes(newCommitLine)) {
+        throw new Error('Failed to update source commit');
+    }
+
+    await fsPromises.writeFile(manifestPath, newContent);
+    console.log(`${manifestName}: updated to ${desktopCommit}`);
+};
+
+/**
  * @param {url} url
  * @returns {Promise<Response>}
  */
@@ -43,14 +78,13 @@ const fetchWithCache = async (url) => {
     return response;
 };
 
-const getRootPackageLock = async (sourceRepo) => {
-    const rootPackageLockPath = path.join(sourceRepo, 'package-lock.json');
-    const rootPackageLockText = await fsPromises.readFile(rootPackageLockPath, 'utf-8');
-    return JSON.parse(rootPackageLockText);    
+const getRootPackageLock = async (desktopCommit) => {
+    const response = await fetchWithCache(`https://raw.githubusercontent.com/TurboWarp/desktop/${desktopCommit}/package-lock.json`);
+    return response.json();
 };
 
-const generateElectron = async (sourceRepo) => {
-    const packageLock = await getRootPackageLock(sourceRepo);
+const generateElectron = async (desktopCommit) => {
+    const packageLock = await getRootPackageLock(desktopCommit);
     const version = packageLock.packages['node_modules/electron'].version;
 
     const sumsRequest = await fetch(`https://github.com/electron/electron/releases/download/v${version}/SHASUMS256.txt`);
@@ -85,7 +119,7 @@ const generateElectron = async (sourceRepo) => {
     ];
 };
 
-const generateNodeDependencies = async (sourceRepo) => {
+const generateNodeDependencies = async (desktopCommit) => {
     // Here we use "npm" to refer to any package repository that serves prebuilt tarballs.
 
     /**
@@ -190,7 +224,7 @@ const generateNodeDependencies = async (sourceRepo) => {
     };
 
     await visitPackageLock({
-        packageLock: await getRootPackageLock(sourceRepo),
+        packageLock: await getRootPackageLock(desktopCommit),
         devOnly: false,
         prefix: ''
     });
@@ -249,11 +283,14 @@ const generateNodeDependencies = async (sourceRepo) => {
     return sources;
 };
 
-const generateLibrary = async (sourceRepo) => {
-    const readLibrary = async (name) => {
-        const jsonPath = path.join(sourceRepo, 'node_modules/scratch-gui/src/lib/libraries/', `${name}.json`);
-        const content = await fsPromises.readFile(jsonPath, 'utf-8');
-        return JSON.parse(content);
+const generateLibrary = async (desktopCommit) => {
+    const packageLock = await getRootPackageLock(desktopCommit);
+    const guiResolved = packageLock.packages['node_modules/scratch-gui'].resolved;
+    const guiCommit = guiResolved.split('#')[1];
+
+    const fetchLibrary = async (name) => {
+        const response = await fetchWithCache(`https://raw.githubusercontent.com/TurboWarp/scratch-gui/${guiCommit}/src/lib/libraries/${name}.json`)
+        return response.json();
     };
 
     const [
@@ -262,10 +299,10 @@ const generateLibrary = async (sourceRepo) => {
         sounds,
         sprites
     ] = await Promise.all([
-        readLibrary('costumes'),
-        readLibrary('backdrops'),
-        readLibrary('sounds'),
-        readLibrary('sprites'),
+        fetchLibrary('costumes'),
+        fetchLibrary('backdrops'),
+        fetchLibrary('sounds'),
+        fetchLibrary('sprites'),
     ]);
 
     const md5exts = new Set();
@@ -306,10 +343,9 @@ const generateLibrary = async (sourceRepo) => {
     return sources;
 };
 
-const generatePackager = async (sourceRepo) => {
-    const dataPath = path.join(sourceRepo, 'scripts/packager.json');
-    const dataContents = await fsPromises.readFile(dataPath, 'utf-8');
-    const data = JSON.parse(dataContents);
+const generatePackager = async (desktopCommit) => {
+    const response = await fetchWithCache(`https://raw.githubusercontent.com/TurboWarp/desktop/${desktopCommit}/scripts/packager.json`);
+    const data = await response.json();
     return [
         {
             type: 'file',
@@ -322,6 +358,8 @@ const generatePackager = async (sourceRepo) => {
 };
 
 const generateMicrobitHex = async () => {
+    // TODO: currently hardcoded in scratch-gui code, not in a file meant to be machine
+    // readable externally, so this is being hardcoded.
     return [
         {
             type: 'file',
@@ -334,12 +372,7 @@ const generateMicrobitHex = async () => {
 };
 
 const run = async () => {
-    if (process.argv.length !== 3) {
-        console.log(`Run as node flatpak/generate-sources.js <path to turbowarp-desktop>`);
-        process.exit(1);
-    }
-
-    const sourceRepo = path.resolve(process.argv[2]);
+    const commitHash = process.argv.length >= 3 ? process.argv[2] : await getMostRecentRelease();
 
     /**
      * @param {string} name
@@ -351,10 +384,11 @@ const run = async () => {
         await fsPromises.writeFile(path.join(import.meta.dirname, name), JSON.stringify(data, null, 2));
     };
 
-    await save('electron-sources.json', await generateElectron(sourceRepo));
-    await save('node-sources.json', await generateNodeDependencies(sourceRepo));
-    await save('library-sources.json', await generateLibrary(sourceRepo));
-    await save('packager-sources.json', await generatePackager(sourceRepo));
+    await updateSourceCommit(commitHash);
+    await save('electron-sources.json', await generateElectron(commitHash));
+    await save('node-sources.json', await generateNodeDependencies(commitHash));
+    await save('library-sources.json', await generateLibrary(commitHash));
+    await save('packager-sources.json', await generatePackager(commitHash));
     await save('microbit-sources.json', await generateMicrobitHex());
 };
 

@@ -34,7 +34,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: 14bf8248de5a5563bdb98d8e0ad17ff508cc7f70
+        commit: db90fe8de9f90ce63a6a567033ffd7bb8a2f5600
       - type: file
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
@@ -75,9 +75,10 @@ modules:
           exit 1
         fi
         export ELECTRON_CACHE=flatpak-electron
-        export DEBUG=*
         node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
       # Copy app files
+      # On x64 the output is linux-unpacked
+      # On aarch64 the output is linux-arm64-unpacked
       - cp -av dist/linux*unpacked /app/turbowarp
       # Copy start script
       - install -Dm755 turbowarp-desktop.sh /app/bin/turbowarp-desktop

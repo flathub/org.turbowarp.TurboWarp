@@ -10,4 +10,14 @@ flatpak override org.turbowarp.TurboWarp --filesystem=/path/to/folder/
 
 ## Updating to new versions
 
-Run `node generate-sources.js <path to turbowarp-desktop>`.
+To update to latest stable tag:
+
+```bash
+node generate-sources.js
+```
+
+To update to specific commit:
+
+```bash
+node generate-sources.js <TurboWarp/desktop commit hash>
+```
