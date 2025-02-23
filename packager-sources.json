@@ -1,0 +1,9 @@
+[
+  {
+    "type": "file",
+    "url": "https://github.com/TurboWarp/packager/releases/download/v3.4.1/turbowarp-packager-standalone-3.4.1.html",
+    "sha256": "78143d5c90fac6b60cb85d2beb4897dcbb655ec0c0742f0e26201933fce6e638",
+    "dest": "src-renderer/packager",
+    "dest-filename": "standalone.html"
+  }
+]

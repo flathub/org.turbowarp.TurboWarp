@@ -7,3 +7,17 @@ By default, drag and drop will only work with files in your downloads, pictures,
 ```bash
 flatpak override org.turbowarp.TurboWarp --filesystem=/path/to/folder/
 ```
+
+## Updating to new versions
+
+To update to latest stable tag:
+
+```bash
+node generate-sources.js
+```
+
+To update to specific commit:
+
+```bash
+node generate-sources.js <TurboWarp/desktop commit hash>
+```
