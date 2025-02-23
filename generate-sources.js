@@ -1,22 +1,6 @@
-// TODO: refactor so this works in this repository, don't assume to be running in TurboWarp/desktop
-
-const fsPromises = require('node:fs/promises');
-const path = require('node:path');
-const nodeCrypto = require('node:crypto');
-
-const cacheDir = path.join(__dirname, 'cache');
-
-/**
- * @template T
- * @param {T[]} destination modified in-place
- * @param {T[]} newItems not modified
- * @returns {void}
- */
-const appendInPlace = (destination, newItems) => {
-    for (const item of newItems) {
-        destination.push(item);
-    }
-};
+import fsPromises from 'node:fs/promises';
+import path from 'node:path';
+import nodeCrypto from 'node:crypto';
 
 /**
  * @param {url} url
@@ -26,17 +10,14 @@ const fetchWithCache = async (url) => {
     const urlHash = nodeCrypto.createHash('sha256')
         .update(url)
         .digest('hex');
-    const cachePath = path.join(cacheDir, urlHash);
 
-    await fsPromises.mkdir(cacheDir, {
-        recursive: true
-    });
+    const cacheDir = path.join(import.meta.dirname, 'cache');
+    const cachePath = path.join(cacheDir, urlHash);
 
     let response;
     try {
         const data = await fsPromises.readFile(cachePath);
         response = new Response(data);
-        console.log(`Cached: ${url}`);
     } catch (e) {
         console.log(`Fetching: ${url}`);
 
@@ -48,124 +29,244 @@ const fetchWithCache = async (url) => {
         // Clone response to return
         response = res.clone();
 
-        // But use the original response to cache
+        // Use the original response to store it in the cache
         const data = new Uint8Array(await res.arrayBuffer());
 
         // Write then rename so this is slightly more atomic
+        await fsPromises.mkdir(cacheDir, {
+            recursive: true
+        });
         await fsPromises.writeFile(`${cachePath}.temp`, data);
         await fsPromises.rename(`${cachePath}.temp`, cachePath);
     }
 
     return response;
-}
+};
 
-const generateNodePackage = async (packagePath, package) => {
-    if (!package.integrity.startsWith('sha512-')) {
-        throw new Error(`Unknown integrity algorithm: ${package}`);
+const getRootPackageLock = async (sourceRepo) => {
+    const rootPackageLockPath = path.join(sourceRepo, 'package-lock.json');
+    const rootPackageLockText = await fsPromises.readFile(rootPackageLockPath, 'utf-8');
+    return JSON.parse(rootPackageLockText);    
+};
+
+const generateElectron = async (sourceRepo) => {
+    const packageLock = await getRootPackageLock(sourceRepo);
+    const version = packageLock.packages['node_modules/electron'].version;
+
+    const sumsRequest = await fetch(`https://github.com/electron/electron/releases/download/v${version}/SHASUMS256.txt`);
+    const sumsText = await sumsRequest.text();
+    const sums = {};
+    for (const match of sumsText.matchAll(/^([a-f0-9]{64}) \*?(.+)$/gm)) {
+        sums[match[2]] = match[1];
     }
-    const destName = packagePath.replace(/\//g, '_');
-    const sha512 = Buffer.from(package.integrity.substring(7), 'base64').toString('hex');
+
+    const x64 = `electron-v${version}-linux-x64.zip`;
+    const arm64 = `electron-v${version}-linux-arm64.zip`;
+    // While Electron does support 32 bit ARM, the freedesktop SDK does not, so we cannot
+    // support it in the flatpak.
+
     return [
         {
             type: 'file',
-            url: package.resolved,
-            sha512,
-            dest: 'flatpak-node/',
-            'dest-filename': destName
+            url: `https://github.com/electron/electron/releases/download/v${version}/${x64}`,
+            sha256: sums[x64],
+            dest: 'flatpak-electron',
+            'dest-filename': x64,
+            'only-arches': ['x86_64']
         },
         {
-            type: 'script',
-            commands: [
-                `mkdir -p "${packagePath}"`,
-                `tar -xzf "flatpak-node/${destName}" -C "${packagePath}" --warning=no-unknown-keyword --strip-components=1`,
-            ],
-            dest: 'flatpak-node/shell',
-            'dest-filename': destName
+            type: 'file',
+            url: `https://github.com/electron/electron/releases/download/v${version}/${arm64}`,
+            sha256: sums[arm64],
+            dest: 'flatpak-electron',
+            'dest-filename': arm64,
+            'only-arches': ['aarch64']
         }
     ];
 };
 
-const generateGitPackage = async (packagePath, package) => {
-    const match = package.resolved.match(/^git\+ssh:\/\/git@github\.com\/([\w\d-]+)\/([\w\d-]+)\.git#([0-9a-f]{40})$/);
-    const owner = match[1];
-    const repository = match[2];
-    const commit = match[3];
+const generateNodeDependencies = async (sourceRepo) => {
+    // Here we use "npm" to refer to any package repository that serves prebuilt tarballs.
 
-    let subsources;
-    if (packagePath !== 'node_modules/@electron/node-gyp') {
-        const packageLockResponse = await fetchWithCache(`https://raw.githubusercontent.com/${owner}/${repository}/${commit}/package-lock.json`)
-        const packageLock = await packageLockResponse.json();
-        subsources = await generatePackageLock({
-            packageLock,
-            devOnly: true,
-            prefix: packagePath
-        });
-    } else {
-        subsources = [];
-    }
+    /**
+     * Indexed by the SHA-512 of the package's tarball.
+     * @type {Record<string, {name: string; url: string; destinations: string[];}>}
+     */
+    const npmPackages = {};
 
-    return [
-        {
-            type: 'git',
-            url: `https://github.com/${owner}/${repository}.git`,
-            commit,
-            dest: packagePath
-        },
-        ...subsources
-    ];
-};
+    /**
+     * Indexed by repository's normalized git URL with commit hash separated by #.
+     * @type {Record<string, {name: string; url: string; commit: string; destinations: string[];}>}
+     */
+    const gitPackages = {};
 
-/**
- * 
- * @param {{packageLock: object; devOnly: boolean; prefix: string;}} context 
- * @returns 
- */
-const generatePackageLock = async (context) => {
-    const sources = [];
-
-    for (const [packagePath, package] of Object.entries(context.packageLock.packages)) {
-        if (packagePath === '') {
-            // Root package is already downloaded.
-            continue;
+    const visitNpmPackage = async (packagePath, pkg) => {
+        if (!pkg.integrity.startsWith('sha512-')) {
+            throw new Error(`Unknown integrity algorithm: ${pkg.integrity}`);
         }
 
-        if (context.devOnly && package.dev) {
-            continue;
+        const sha512 = Buffer.from(pkg.integrity.substring(7), 'base64').toString('hex');
+        if (!Object.hasOwn(npmPackages, sha512)) {
+            npmPackages[sha512] = {
+                name: path.basename(packagePath),
+                // These all have the same SHA-512. They should also have the same npmjs.com
+                // URL but it doesn't matter since it's the same content.
+                url: pkg.resolved,
+                destinations: []
+            };
+        }
+        npmPackages[sha512].destinations.push(packagePath);
+    };
+
+    const visitGitPackage = async (packagePath, pkg) => {
+        const match = pkg.resolved.match(/^git\+ssh:\/\/git@github\.com\/([\w\d-]+)\/([\w\d-]+)\.git#([0-9a-f]{40})$/);
+        if (!match) {
+            throw new Error(`Unknown git URL: ${pkg.resolved}`);
         }
 
-        const prefixedPath = path.join(context.prefix, packagePath);
+        const owner = match[1];
+        const repository = match[2];
+        const commit = match[3];
 
-        if (!package.resolved) {
-            console.warn(`Unresolved: ${prefixedPath}`);
-            continue;
+        if (owner === 'electron' && repository === 'node-gyp') {
+            // Ignore this repository. We don't need it and the package-lock.json isn't
+            // where we expect it to be.
+            return;
         }
 
-        if (package.resolved.startsWith('https://')) {
-            appendInPlace(sources, await generateNodePackage(prefixedPath, package));
-        } else if (package.resolved.startsWith('git+ssh://')) {
-            appendInPlace(sources, await generateGitPackage(prefixedPath, package));
-        } else {
-            throw new Error(`Unknown resolved: ${package.resolved}`);
+        const normalizedGitURL = `https://github.com/${owner}/${repository}.git#${commit}`;
+        if (!Object.hasOwn(gitPackages, normalizedGitURL)) {
+            // For git dependencies, npm seems to do a recursive `npm install` instead of tracking
+            // its dependencies in the parent's package-lock.json, so we also have to recurse.
+            const packageLockResponse = await fetchWithCache(`https://raw.githubusercontent.com/${owner}/${repository}/${commit}/package-lock.json`)
+            const packageLockJSON = await packageLockResponse.json();
+            await visitPackageLock({
+                packageLock: packageLockJSON,
+                // This is a sub-dependency. Parent package already has build tooling so we
+                // don't need the child's build tools.
+                devOnly: true,
+                prefix: packagePath
+            });
+
+            gitPackages[normalizedGitURL] = {
+                name: repository,
+                destinations: []
+            };
         }
-    }
+        gitPackages[normalizedGitURL].destinations.push(packagePath);
+    };
 
-    return sources;
-}
+    /**
+     *
+     * @param {{packageLock: object; devOnly: boolean; prefix: string;}} context
+     * @returns
+     */
+    const visitPackageLock = async (context) => {
+        for (const [pkgPath, pkg] of Object.entries(context.packageLock.packages)) {
+            if (pkgPath === '') {
+                // This is the package-lock.json's reference to itself, basically, so
+                // we can ignore it, since the package itself has already been downloaded.
+                continue;
+            }
 
-const generateNodeDependencies = async () => {
-    const rootPackageLock = require('../package-lock.json')
-    return generatePackageLock({
-        packageLock: rootPackageLock,
+            if (context.devOnly && pkg.dev) {
+                continue;
+            }
+
+            if (!pkg.resolved) {
+                // Not sure what to do about these, but ignoring them seems to work out...
+                continue;
+            }
+
+            const prefixedPath = path.join(context.prefix, pkgPath);
+            if (pkg.resolved.startsWith('https://')) {
+                await visitNpmPackage(prefixedPath, pkg);
+            } else if (pkg.resolved.startsWith('git+ssh://')) {
+                await visitGitPackage(prefixedPath, pkg);
+            } else {
+                throw new Error(`Unknown resolved: ${pkg.resolved}`);
+            }
+        }
+    };
+
+    await visitPackageLock({
+        packageLock: await getRootPackageLock(sourceRepo),
         devOnly: false,
         prefix: ''
     });
+
+    const sources = [];
+    const commands = [
+        // Echo commands as they are executed so there is some indication of progress.
+        'set -x'
+    ];
+
+    for (const [sha512, metadata] of Object.entries(npmPackages)) {
+        const name = `${metadata.name}-${sha512}`;
+        sources.push({
+            type: 'file',
+            url: metadata.url,
+            sha512,
+            dest: 'flatpak-node/npm',
+            'dest-filename': name
+        });
+
+        // TODO: this could be faster by extracting once then copying instead of extracting
+        // for each destination
+        for (const destination of metadata.destinations) {
+            commands.push(`mkdir -p "${destination}"`);
+            // --warning=no-unknown-keyword removes some expected warnings from npm putting custom
+            // metadata into the tarballs.
+            // --strip-components=1 because every package has an inner `package` directory.
+            commands.push(`tar -xzf "flatpak-node/npm/${name}" -C "${destination}" --warning=no-unknown-keyword --strip-components=1`);
+        }
+    }
+
+    for (const [normalizedURL, metadata] of Object.entries(gitPackages)) {
+        const [cloneURL, commit] = normalizedURL.split('#');
+        const dest = `flatpak-node/git/${metadata.name}-${commit}`;
+        sources.push({
+            type: 'git',
+            url: cloneURL,
+            commit: commit,
+            dest
+        });
+
+        for (const destination of metadata.destinations) {
+            commands.push(`mkdir -p "${destination}"`);
+            commands.push(`cp -a "${dest}"/* "${destination}"`);
+        }
+    }
+
+    // One big command script to run a lot faster than a bunch of tiny shell sources.
+    sources.push({
+        type: 'script',
+        commands,
+        dest: 'flatpak-node',
+        'dest-filename': 'finish.sh'
+    });
+
+    return sources;
 };
 
-const generateLibrary = async () => {
-    const costumes = require('../node_modules/scratch-gui/src/lib/libraries/costumes.json');
-    const backdrops = require('../node_modules/scratch-gui/src/lib/libraries/backdrops.json');
-    const sounds = require('../node_modules/scratch-gui/src/lib/libraries/sounds.json');
-    const sprites = require('../node_modules/scratch-gui/src/lib/libraries/sprites.json');
+const generateLibrary = async (sourceRepo) => {
+    const readLibrary = async (name) => {
+        const jsonPath = path.join(sourceRepo, 'node_modules/scratch-gui/src/lib/libraries/', `${name}.json`);
+        const content = await fsPromises.readFile(jsonPath, 'utf-8');
+        return JSON.parse(content);
+    };
+
+    const [
+        costumes,
+        backdrops,
+        sounds,
+        sprites
+    ] = await Promise.all([
+        readLibrary('costumes'),
+        readLibrary('backdrops'),
+        readLibrary('sounds'),
+        readLibrary('sprites'),
+    ]);
 
     const md5exts = new Set();
     for (const asset of [...costumes, ...backdrops, ...sounds]) {
@@ -197,7 +298,7 @@ const generateLibrary = async () => {
             type: 'file',
             url,
             sha256,
-            dest: 'uncompressed-library-files',
+            dest: 'flatpak-uncompressed-library-files',
             'dest-filename': md5ext
         });
     }
@@ -205,8 +306,10 @@ const generateLibrary = async () => {
     return sources;
 };
 
-const generatePackager = async () => {
-    const data = require('../scripts/packager.json');
+const generatePackager = async (sourceRepo) => {
+    const dataPath = path.join(sourceRepo, 'scripts/packager.json');
+    const dataContents = await fsPromises.readFile(dataPath, 'utf-8');
+    const data = JSON.parse(dataContents);
     return [
         {
             type: 'file',
@@ -230,56 +333,29 @@ const generateMicrobitHex = async () => {
     ];
 };
 
-const generateElectron = async () => {
-    const packageLock = require('../package-lock.json');
-    const version = packageLock.packages['node_modules/electron'].version;
-
-    const sumsRequest = await fetch(`https://github.com/electron/electron/releases/download/v${version}/SHASUMS256.txt`);
-    const sumsText = await sumsRequest.text();
-    const sums = {};
-    for (const match of sumsText.matchAll(/^([a-f0-9]{64}) \*?(.+)$/gm)) {
-        sums[match[2]] = match[1];
-    }
-
-    const x64 = `electron-v${version}-linux-x64.zip`;
-    const arm64 = `electron-v${version}-linux-arm64.zip`;
-
-    return [
-        {
-            type: 'file',
-            url: `https://github.com/electron/electron/releases/download/v${version}/${x64}`,
-            sha256: sums[x64],
-            dest: 'electron',
-            'dest-filename': x64,
-            'only-arches': ['x86_64']
-        },
-        {
-            type: 'file',
-            url: `https://github.com/electron/electron/releases/download/v${version}/${arm64}`,
-            sha256: sums[arm64],
-            dest: 'electron',
-            'dest-filename': arm64,
-            'only-arches': ['aarch64']
-        }
-    ];
-};
-
 const run = async () => {
     if (process.argv.length !== 3) {
-        console.log(`Run as node flatpak/generate-sources.js <path to org.turbowarp.TurboWarp>`);
+        console.log(`Run as node flatpak/generate-sources.js <path to turbowarp-desktop>`);
         process.exit(1);
     }
 
-    const format = (json) => JSON.stringify(json, null, 2);
-    const outDir = process.argv[2];
+    const sourceRepo = path.resolve(process.argv[2]);
 
-    await fsPromises.writeFile(path.join(outDir, 'electron-sources.json'), format(await generateElectron()));
-    await fsPromises.writeFile(path.join(outDir, 'node-sources.json'), format(await generateNodeDependencies()));
-    await fsPromises.writeFile(path.join(outDir, 'library-sources.json'), format(await generateLibrary()));
-    await fsPromises.writeFile(path.join(outDir, 'packager-sources.json'), format(await generatePackager()));
-    await fsPromises.writeFile(path.join(outDir, 'microbit-sources.json'), format(await generateMicrobitHex()));
+    /**
+     * @param {string} name
+     * @param {unknown[]} data
+     * @returns {Promise<void>}
+     */
+    const save = async (name, data) => {
+        console.log(`${name}: ${data.length} sources`);
+        await fsPromises.writeFile(path.join(import.meta.dirname, name), JSON.stringify(data, null, 2));
+    };
 
-    console.log(`Generated to ${outDir}`);
+    await save('electron-sources.json', await generateElectron(sourceRepo));
+    await save('node-sources.json', await generateNodeDependencies(sourceRepo));
+    await save('library-sources.json', await generateLibrary(sourceRepo));
+    await save('packager-sources.json', await generatePackager(sourceRepo));
+    await save('microbit-sources.json', await generateMicrobitHex());
 };
 
 run()

@@ -45,16 +45,12 @@ modules:
       - microbit-sources.json
     build-commands:
       # Finish setting up Node.js dependencies.
-      - |
-        for file in flatpak-node/shell/*; do
-          echo "Running $file"
-          bash "$file"
-        done
+      - ./flatpak-node/finish.sh
       # Compress library files
       - |
-        brotli -v uncompressed-library-files/*
+        brotli -v flatpak-uncompressed-library-files/*
         mkdir -pv dist-library-files
-        mv -v uncompressed-library-files/*.br dist-library-files
+        mv -v flatpak-uncompressed-library-files/*.br dist-library-files
       # Extract microbit
       - |
         cd microbit
@@ -77,7 +73,9 @@ modules:
           echo "Unknown arch: $FLATPAK_ARCH"
           exit 1
         fi
-        ELECTRON_CACHE=electron node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
+        export ELECTRON_CACHE=flatpak-electron
+        export DEBUG=*
+        node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
       # Copy app files
       - cp -av dist/linux-unpacked /app/turbowarp
       # Copy start script
