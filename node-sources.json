@@ -9277,14 +9277,20 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/types-tw.git",
-    "commit": "9c201e96c956c2c00d15edae4ff56c351966b26c",
-    "dest": "flatpak-node/git/types-tw-9c201e96c956c2c00d15edae4ff56c351966b26c"
+    "commit": "b9bcd7721069e5f158b5878b2d0ad7cd8c73e04a",
+    "dest": "flatpak-node/git/types-tw-b9bcd7721069e5f158b5878b2d0ad7cd8c73e04a"
   },
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/extensions.git",
-    "commit": "7835a140674012e0a9144d3179e427aab0204844",
-    "dest": "flatpak-node/git/extensions-7835a140674012e0a9144d3179e427aab0204844"
+    "commit": "8333213c53f68c59c7bf5e5b2311fc6d88414837",
+    "dest": "flatpak-node/git/extensions-8333213c53f68c59c7bf5e5b2311fc6d88414837"
+  },
+  {
+    "type": "git",
+    "url": "https://github.com/TurboWarp/types-tw.git",
+    "commit": "9c201e96c956c2c00d15edae4ff56c351966b26c",
+    "dest": "flatpak-node/git/types-tw-9c201e96c956c2c00d15edae4ff56c351966b26c"
   },
   {
     "type": "git",
@@ -15441,11 +15447,11 @@
       "mkdir -p \"node_modules/yargs-parser\"",
       "tar -xzf \"flatpak-node/npm/yargs-parser-b55a6c256ec376379c0221696c80757b7ab1210b04e8da0f739fde4ddadb6c80b88742d5b16867a1ade0fa6d87725048ba31f3b31678549540f8652e736fcb07\" -C \"node_modules/yargs-parser\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
-      "cp -a \"flatpak-node/git/types-tw-9c201e96c956c2c00d15edae4ff56c351966b26c\"/* \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
+      "cp -a \"flatpak-node/git/types-tw-b9bcd7721069e5f158b5878b2d0ad7cd8c73e04a\"/* \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
+      "mkdir -p \"node_modules/@turbowarp/extensions\"",
+      "cp -a \"flatpak-node/git/extensions-8333213c53f68c59c7bf5e5b2311fc6d88414837\"/* \"node_modules/@turbowarp/extensions\"",
       "mkdir -p \"node_modules/@turbowarp/types\"",
       "cp -a \"flatpak-node/git/types-tw-9c201e96c956c2c00d15edae4ff56c351966b26c\"/* \"node_modules/@turbowarp/types\"",
-      "mkdir -p \"node_modules/@turbowarp/extensions\"",
-      "cp -a \"flatpak-node/git/extensions-7835a140674012e0a9144d3179e427aab0204844\"/* \"node_modules/@turbowarp/extensions\"",
       "mkdir -p \"node_modules/scratch-audio\"",
       "cp -a \"flatpak-node/git/scratch-audio-7f5925ec2c10e120c4160d6e013db6847444d88e\"/* \"node_modules/scratch-audio\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-audio\"",
