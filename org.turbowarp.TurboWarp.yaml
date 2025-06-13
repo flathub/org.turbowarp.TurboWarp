@@ -34,7 +34,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: 7eeb079cddba3a0e61c7180c99ec2471e44f2cf4
+        commit: 1a48ca111ae2d90a0bd7539814436603291a3783
       - type: file
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
