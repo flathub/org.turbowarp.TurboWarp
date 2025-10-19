@@ -13,7 +13,8 @@ build-options:
 finish-args:
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
   # For webcam and microphone access.
   - --device=all
@@ -34,7 +35,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: 1a48ca111ae2d90a0bd7539814436603291a3783
+        commit: 5ac50569e4577fbbccd193c4ddb8ceb9aae57308
       - type: file
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
@@ -43,6 +44,7 @@ modules:
       - library-sources.json
       - packager-sources.json
       - microbit-sources.json
+      - extensions-sources.json
     build-commands:
       # Finish setting up Node.js dependencies.
       - ./flatpak-node/finish.sh
@@ -60,7 +62,7 @@ modules:
         mkdir -pv ../node_modules/scratch-gui/src/generated
         echo "module.exports = require('./../../static/microbit.hex');" | tee ../node_modules/scratch-gui/src/generated/microbit-hex-url.cjs
       # Build extensions
-      - node scripts/prepare-extensions.js
+      - node scripts/prepare-extensions.mjs
       # Build editor
       - NODE_ENV=production node node_modules/webpack/bin/webpack.js
       # Package Electron
