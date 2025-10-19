@@ -371,6 +371,27 @@ const generateMicrobitHex = async () => {
     ];
 };
 
+const generateExtensions = async (desktopCommit) => {
+    const packageLock = await getRootPackageLock(desktopCommit);
+    const extensionsPackage = packageLock.packages['node_modules/@turbowarp/extensions'];
+    const extensionsCommit = extensionsPackage.resolved.split('#')[1];
+
+    const extensionDependenciesResponse = await fetchWithCache(`https://raw.githubusercontent.com/TurboWarp/extensions/${extensionsCommit}/extension-dependencies.json`);
+    const extensionDependencies = await extensionDependenciesResponse.json();
+    
+    const sources = [];
+    for (const [url, {sha256}] of Object.entries(extensionDependencies.dependencies)) {
+        sources.push({
+            type: 'file',
+            url,
+            sha256,
+            dest: 'node_modules/@turbowarp/extensions/cached-extension-dependencies',
+            'dest-filename': sha256
+        });
+    }
+    return sources;
+};
+
 const run = async () => {
     const commitHash = process.argv.length >= 3 ? process.argv[2] : await getMostRecentRelease();
 
@@ -390,6 +411,7 @@ const run = async () => {
     await save('library-sources.json', await generateLibrary(commitHash));
     await save('packager-sources.json', await generatePackager(commitHash));
     await save('microbit-sources.json', await generateMicrobitHex());
+    await save('extensions-sources.json', await generateExtensions(commitHash));
 };
 
 run()

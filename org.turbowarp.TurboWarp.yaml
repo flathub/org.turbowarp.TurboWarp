@@ -43,6 +43,7 @@ modules:
       - library-sources.json
       - packager-sources.json
       - microbit-sources.json
+      - extensions-sources.json
     build-commands:
       # Finish setting up Node.js dependencies.
       - ./flatpak-node/finish.sh
