@@ -62,7 +62,7 @@ modules:
         mkdir -pv ../node_modules/scratch-gui/src/generated
         echo "module.exports = require('./../../static/microbit.hex');" | tee ../node_modules/scratch-gui/src/generated/microbit-hex-url.cjs
       # Build extensions
-      - node scripts/prepare-extensions.js
+      - node scripts/prepare-extensions.mjs
       # Build editor
       - NODE_ENV=production node node_modules/webpack/bin/webpack.js
       # Package Electron
