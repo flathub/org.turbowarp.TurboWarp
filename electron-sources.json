@@ -1,20 +1,20 @@
 [
   {
     "type": "file",
-    "url": "https://github.com/electron/electron/releases/download/v38.3.0/electron-v38.3.0-linux-x64.zip",
-    "sha256": "ca8f7cd9cbd216e4cf96c32363237a9042829b357fbf9e93d9474249ad85c37d",
+    "url": "https://github.com/electron/electron/releases/download/v39.2.7/electron-v39.2.7-linux-x64.zip",
+    "sha256": "2f5285ef563dca154aa247696dddef545d3d895dd9b227ed423ea0d43737c22c",
     "dest": "flatpak-electron",
-    "dest-filename": "electron-v38.3.0-linux-x64.zip",
+    "dest-filename": "electron-v39.2.7-linux-x64.zip",
     "only-arches": [
       "x86_64"
     ]
   },
   {
     "type": "file",
-    "url": "https://github.com/electron/electron/releases/download/v38.3.0/electron-v38.3.0-linux-arm64.zip",
-    "sha256": "3b1b24b2c531a7361604905d9d33991903bb02ecf42c5accb01969359c01d0f4",
+    "url": "https://github.com/electron/electron/releases/download/v39.2.7/electron-v39.2.7-linux-arm64.zip",
+    "sha256": "445465a43bd2ffaec09877f4ed46385065632a4683c2806cc6211cc73c110024",
     "dest": "flatpak-electron",
-    "dest-filename": "electron-v38.3.0-linux-arm64.zip",
+    "dest-filename": "electron-v39.2.7-linux-arm64.zip",
     "only-arches": [
       "aarch64"
     ]
