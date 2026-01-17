@@ -4376,10 +4376,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/electron/-/electron-39.2.7.tgz",
-    "sha512": "294d2e152e8b49387868e202de68a895c6e2cce14fecdd4ce3a5536157ea220162b80da295f35a3872c34bdb4232fc301d1a3002cbea06b87d36031771338709",
+    "url": "https://registry.npmjs.org/electron/-/electron-40.0.0.tgz",
+    "sha512": "532072e72274ff09b880dba00ad34f8ef75d8c0927313b974766821e2a1789c1fb68a44a18304fa78c6a4c48bf76855c07747e30ddf07d4f68f1dffda7080ad8",
     "dest": "flatpak-node/npm",
-    "dest-filename": "electron-294d2e152e8b49387868e202de68a895c6e2cce14fecdd4ce3a5536157ea220162b80da295f35a3872c34bdb4232fc301d1a3002cbea06b87d36031771338709"
+    "dest-filename": "electron-532072e72274ff09b880dba00ad34f8ef75d8c0927313b974766821e2a1789c1fb68a44a18304fa78c6a4c48bf76855c07747e30ddf07d4f68f1dffda7080ad8"
   },
   {
     "type": "file",
@@ -4422,6 +4422,20 @@
     "sha512": "6090da0896449c199c6f0d777ef74033d03034e2703b3ac4e29a8ca81ab99c5884a9752a1f094ae01fb7a54c3a24dbdf48fb57d39c451ed632ff59e2d357860b",
     "dest": "flatpak-node/npm",
     "dest-filename": "fs-extra-6090da0896449c199c6f0d777ef74033d03034e2703b3ac4e29a8ca81ab99c5884a9752a1f094ae01fb7a54c3a24dbdf48fb57d39c451ed632ff59e2d357860b"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/@types/node/-/node-24.10.9.tgz",
+    "sha512": "9dee00d08a46dfed844ee4442278cf3615068acd52163bf57796aca7c3331001ad399793787543398a8e82a7e1bec7aa83f897b72da18c17f5cc039bed136237",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "node-9dee00d08a46dfed844ee4442278cf3615068acd52163bf57796aca7c3331001ad399793787543398a8e82a7e1bec7aa83f897b72da18c17f5cc039bed136237"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/undici-types/-/undici-types-7.16.0.tgz",
+    "sha512": "673f9a6564a3f0b13ace8c43fb1ae387855f9081bc61ae8bbd8919aad5101893d98d8979df2a42694c16aa8ede234c7ae8a046791a3e9a504490c49e499dfc37",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "undici-types-673f9a6564a3f0b13ace8c43fb1ae387855f9081bc61ae8bbd8919aad5101893d98d8979df2a42694c16aa8ede234c7ae8a046791a3e9a504490c49e499dfc37"
   },
   {
     "type": "file",
@@ -5332,13 +5346,6 @@
     "sha512": "5d7385b72a838cd0c043155f631b85ee0f4897f21b5a69a5420d8c60a387f04c484f5aa0eb1738cf24b71da10401382cd5bb5fcf1ab5e5c894898ee08d25d119",
     "dest": "flatpak-node/npm",
     "dest-filename": "immediate-5d7385b72a838cd0c043155f631b85ee0f4897f21b5a69a5420d8c60a387f04c484f5aa0eb1738cf24b71da10401382cd5bb5fcf1ab5e5c894898ee08d25d119"
-  },
-  {
-    "type": "file",
-    "url": "https://registry.npmjs.org/immutable/-/immutable-3.8.2.tgz",
-    "sha512": "d79819a10dfc7988c48f1928adf6dc8012812fa47b4f8e7d3ae2be0a9716b7b3b7285e2e3c2c76b43d2e1444e5503232a3ed7bf3d72b6cc853bd0052479c8132",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "immutable-d79819a10dfc7988c48f1928adf6dc8012812fa47b4f8e7d3ae2be0a9716b7b3b7285e2e3c2c76b43d2e1444e5503232a3ed7bf3d72b6cc853bd0052479c8132"
   },
   {
     "type": "file",
@@ -9738,8 +9745,8 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/extensions.git",
-    "commit": "92c44ac3783db62241f29acb2c48cf3efbc7a3f1",
-    "dest": "flatpak-node/git/extensions-92c44ac3783db62241f29acb2c48cf3efbc7a3f1"
+    "commit": "91cad007c0060155aeb027b83f51bb7b5bfaa414",
+    "dest": "flatpak-node/git/extensions-91cad007c0060155aeb027b83f51bb7b5bfaa414"
   },
   {
     "type": "git",
@@ -9762,8 +9769,8 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-blocks.git",
-    "commit": "dd1e42660a0df2f5999bd389758cb4aa267ea55e",
-    "dest": "flatpak-node/git/scratch-blocks-dd1e42660a0df2f5999bd389758cb4aa267ea55e"
+    "commit": "8d4539ff072aa267c6cd46d77d388e64058b440a",
+    "dest": "flatpak-node/git/scratch-blocks-8d4539ff072aa267c6cd46d77d388e64058b440a"
   },
   {
     "type": "git",
@@ -9810,14 +9817,14 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-vm.git",
-    "commit": "7fefa6f6663ab83bc761601cb0bf4c1c2ea5ee63",
-    "dest": "flatpak-node/git/scratch-vm-7fefa6f6663ab83bc761601cb0bf4c1c2ea5ee63"
+    "commit": "464a9c68dd0be96bbbedd96c25bc83d542c32b0b",
+    "dest": "flatpak-node/git/scratch-vm-464a9c68dd0be96bbbedd96c25bc83d542c32b0b"
   },
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-gui.git",
-    "commit": "57a91856d034c5fa5e31aca1e27e13f28775bc89",
-    "dest": "flatpak-node/git/scratch-gui-57a91856d034c5fa5e31aca1e27e13f28775bc89"
+    "commit": "9f967c8c5b8d6675d623eef772fce6ce09995c3e",
+    "dest": "flatpak-node/git/scratch-gui-9f967c8c5b8d6675d623eef772fce6ce09995c3e"
   },
   {
     "type": "git",
@@ -13088,7 +13095,7 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/ecc-jsbn\"",
       "tar -xzf \"flatpak-node/npm/ecc-jsbn-7a1f4efa1c111cd6c6e012d38c49779f0d38e029069b95fa2e86827fb2cfa7b514f10aede3b258362ea73d7f318d6f7b4ca18a9b5a2e72d834412a597bdaab9f\" -C \"node_modules/scratch-gui/node_modules/ecc-jsbn\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron\"",
-      "tar -xzf \"flatpak-node/npm/electron-294d2e152e8b49387868e202de68a895c6e2cce14fecdd4ce3a5536157ea220162b80da295f35a3872c34bdb4232fc301d1a3002cbea06b87d36031771338709\" -C \"node_modules/electron\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/electron-532072e72274ff09b880dba00ad34f8ef75d8c0927313b974766821e2a1789c1fb68a44a18304fa78c6a4c48bf76855c07747e30ddf07d4f68f1dffda7080ad8\" -C \"node_modules/electron\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-builder\"",
       "tar -xzf \"flatpak-node/npm/electron-builder-14252abddab60142cbf836f64941a08ce6136eb8243f166d0a3a886469e31fda76f694d6c9eb10a8121fbd004a6ba7b0a9d7bceda5a5e3d9ff5b223f372501a2\" -C \"node_modules/electron-builder\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-builder-squirrel-windows\"",
@@ -13101,6 +13108,10 @@
       "tar -xzf \"flatpak-node/npm/electron-winstaller-6cedf2d7462292e53052e0d441133829fc0d90a867a553bb20f75bb2b7a3c0df7f000049cf34d0e06787c32ccd4ab54efad107dff369db9e5adec559a590e3be\" -C \"node_modules/electron-winstaller\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-winstaller/node_modules/fs-extra\"",
       "tar -xzf \"flatpak-node/npm/fs-extra-6090da0896449c199c6f0d777ef74033d03034e2703b3ac4e29a8ca81ab99c5884a9752a1f094ae01fb7a54c3a24dbdf48fb57d39c451ed632ff59e2d357860b\" -C \"node_modules/electron-winstaller/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/electron/node_modules/@types/node\"",
+      "tar -xzf \"flatpak-node/npm/node-9dee00d08a46dfed844ee4442278cf3615068acd52163bf57796aca7c3331001ad399793787543398a8e82a7e1bec7aa83f897b72da18c17f5cc039bed136237\" -C \"node_modules/electron/node_modules/@types/node\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/electron/node_modules/undici-types\"",
+      "tar -xzf \"flatpak-node/npm/undici-types-673f9a6564a3f0b13ace8c43fb1ae387855f9081bc61ae8bbd8919aad5101893d98d8979df2a42694c16aa8ede234c7ae8a046791a3e9a504490c49e499dfc37\" -C \"node_modules/electron/node_modules/undici-types\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/elliptic\"",
       "tar -xzf \"flatpak-node/npm/elliptic-45a75dbef31ab4ad8b247a8527e600e16cac54de48b5af44df96e8b6a218b294384e444094289c77328e8e5cafff565ae51c93367edd8bffde115d2e4c07dede\" -C \"node_modules/elliptic\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/elliptic\"",
@@ -13753,12 +13764,6 @@
       "tar -xzf \"flatpak-node/npm/immediate-5d7385b72a838cd0c043155f631b85ee0f4897f21b5a69a5420d8c60a387f04c484f5aa0eb1738cf24b71da10401382cd5bb5fcf1ab5e5c894898ee08d25d119\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/scratch-parser/node_modules/immediate\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-parser/node_modules/immediate\"",
       "tar -xzf \"flatpak-node/npm/immediate-5d7385b72a838cd0c043155f631b85ee0f4897f21b5a69a5420d8c60a387f04c484f5aa0eb1738cf24b71da10401382cd5bb5fcf1ab5e5c894898ee08d25d119\" -C \"node_modules/scratch-parser/node_modules/immediate\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/immutable\"",
-      "tar -xzf \"flatpak-node/npm/immutable-d79819a10dfc7988c48f1928adf6dc8012812fa47b4f8e7d3ae2be0a9716b7b3b7285e2e3c2c76b43d2e1444e5503232a3ed7bf3d72b6cc853bd0052479c8132\" -C \"node_modules/immutable\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/scratch-gui/node_modules/immutable\"",
-      "tar -xzf \"flatpak-node/npm/immutable-d79819a10dfc7988c48f1928adf6dc8012812fa47b4f8e7d3ae2be0a9716b7b3b7285e2e3c2c76b43d2e1444e5503232a3ed7bf3d72b6cc853bd0052479c8132\" -C \"node_modules/scratch-gui/node_modules/immutable\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/immutable\"",
-      "tar -xzf \"flatpak-node/npm/immutable-d79819a10dfc7988c48f1928adf6dc8012812fa47b4f8e7d3ae2be0a9716b7b3b7285e2e3c2c76b43d2e1444e5503232a3ed7bf3d72b6cc853bd0052479c8132\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/immutable\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/import-cwd\"",
       "tar -xzf \"flatpak-node/npm/import-cwd-130e4067325016aace5790535b7108a07027a227b52e88d92d729c090ff24d1c95668b0184ad71d558988c719fe690053aaf19c82859a7a9bf7d237ba49c99b6\" -C \"node_modules/import-cwd\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/import-cwd\"",
@@ -16334,7 +16339,7 @@
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
       "cp -a \"flatpak-node/git/types-tw-938c3ab84e4dd859f6f0646cdf7ed5dd1a94f622\"/* \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
       "mkdir -p \"node_modules/@turbowarp/extensions\"",
-      "cp -a \"flatpak-node/git/extensions-92c44ac3783db62241f29acb2c48cf3efbc7a3f1\"/* \"node_modules/@turbowarp/extensions\"",
+      "cp -a \"flatpak-node/git/extensions-91cad007c0060155aeb027b83f51bb7b5bfaa414\"/* \"node_modules/@turbowarp/extensions\"",
       "mkdir -p \"node_modules/@turbowarp/types\"",
       "cp -a \"flatpak-node/git/types-tw-0cf07a4b9b5fe05bc1766db216d726c5bf373ec7\"/* \"node_modules/@turbowarp/types\"",
       "mkdir -p \"node_modules/scratch-audio\"",
@@ -16344,7 +16349,7 @@
       "mkdir -p \"node_modules/scratch-blocks\"",
       "cp -a \"flatpak-node/git/scratch-blocks-6a7e7e5561f25dce86d4ffe664703a110f5945e7\"/* \"node_modules/scratch-blocks\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-blocks\"",
-      "cp -a \"flatpak-node/git/scratch-blocks-dd1e42660a0df2f5999bd389758cb4aa267ea55e\"/* \"node_modules/scratch-gui/node_modules/scratch-blocks\"",
+      "cp -a \"flatpak-node/git/scratch-blocks-8d4539ff072aa267c6cd46d77d388e64058b440a\"/* \"node_modules/scratch-gui/node_modules/scratch-blocks\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint\"",
       "cp -a \"flatpak-node/git/scratch-paint-8093bf77b27ad1128cc9e2862b7b5b39e736e178\"/* \"node_modules/scratch-gui/node_modules/scratch-paint\"",
       "mkdir -p \"node_modules/scratch-paint\"",
@@ -16366,11 +16371,11 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/scratch-render-fonts\"",
       "cp -a \"flatpak-node/git/scratch-render-fonts-6be162025085d738317b40a01644cf8dcbcee023\"/* \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/scratch-render-fonts\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm\"",
-      "cp -a \"flatpak-node/git/scratch-vm-7fefa6f6663ab83bc761601cb0bf4c1c2ea5ee63\"/* \"node_modules/scratch-gui/node_modules/scratch-vm\"",
+      "cp -a \"flatpak-node/git/scratch-vm-464a9c68dd0be96bbbedd96c25bc83d542c32b0b\"/* \"node_modules/scratch-gui/node_modules/scratch-vm\"",
       "mkdir -p \"node_modules/scratch-vm\"",
-      "cp -a \"flatpak-node/git/scratch-vm-7fefa6f6663ab83bc761601cb0bf4c1c2ea5ee63\"/* \"node_modules/scratch-vm\"",
+      "cp -a \"flatpak-node/git/scratch-vm-464a9c68dd0be96bbbedd96c25bc83d542c32b0b\"/* \"node_modules/scratch-vm\"",
       "mkdir -p \"node_modules/scratch-gui\"",
-      "cp -a \"flatpak-node/git/scratch-gui-57a91856d034c5fa5e31aca1e27e13f28775bc89\"/* \"node_modules/scratch-gui\"",
+      "cp -a \"flatpak-node/git/scratch-gui-9f967c8c5b8d6675d623eef772fce6ce09995c3e\"/* \"node_modules/scratch-gui\"",
       "mkdir -p \"node_modules/scratch-parser\"",
       "cp -a \"flatpak-node/git/scratch-parser-326b4bc5e8177073d57732b8b841bcd36c87f658\"/* \"node_modules/scratch-parser\""
     ],
