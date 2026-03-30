@@ -757,17 +757,17 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz",
-    "sha512": "27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f",
+    "url": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz",
+    "sha512": "5608d652c9e74fa9fe35493a799abbef37857695b62d60f33facc51ab09b1d789836e9790f3aa4d871d0e6e147d83356e576e9f3e8d5cda78db7de2cb04125e3",
     "dest": "flatpak-node/npm",
-    "dest-filename": "minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f"
+    "dest-filename": "minimatch-5608d652c9e74fa9fe35493a799abbef37857695b62d60f33facc51ab09b1d789836e9790f3aa4d871d0e6e147d83356e576e9f3e8d5cda78db7de2cb04125e3"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/@electron/fuses/-/fuses-2.0.0.tgz",
-    "sha512": "9726f5ccadd81de5948dacfbca22b41a7c523ddbb001228cca20db0ad6e7deca4fe8412df945ad92d82059e846d22705ad7024dc6c2f709e270ab24ed0df4885",
+    "url": "https://registry.npmjs.org/@electron/fuses/-/fuses-2.1.1.tgz",
+    "sha512": "dfc868dbbfe6b5457f2e9b19d4b083254a262810525190e4fea047e0534db683797e69e49960dc229e699b52afdc89ea8518ca64ab3b273c7ec1664d300ac7ac",
     "dest": "flatpak-node/npm",
-    "dest-filename": "fuses-9726f5ccadd81de5948dacfbca22b41a7c523ddbb001228cca20db0ad6e7deca4fe8412df945ad92d82059e846d22705ad7024dc6c2f709e270ab24ed0df4885"
+    "dest-filename": "fuses-dfc868dbbfe6b5457f2e9b19d4b083254a262810525190e4fea047e0534db683797e69e49960dc229e699b52afdc89ea8518ca64ab3b273c7ec1664d300ac7ac"
   },
   {
     "type": "file",
@@ -827,10 +827,45 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/@electron/rebuild/-/rebuild-4.0.1.tgz",
-    "sha512": "88c1976fa21bec7fd0deff81299268113805f60e8a30d6556ec3b86fb0e6a606f9a9316ac854f3a96f45dd33921ddc9bbf6bca60acd24bd3a264bf9d7096fed5",
+    "url": "https://registry.npmjs.org/@electron/rebuild/-/rebuild-4.0.3.tgz",
+    "sha512": "bbdbe94c744c90e602b3fd452e249500567b15b8ec5caf9b42ecef88965afa51bb047665d67cf9dbf21c1afc1adec93cd3f7dcde596eb4191b0aad74561f1640",
     "dest": "flatpak-node/npm",
-    "dest-filename": "rebuild-88c1976fa21bec7fd0deff81299268113805f60e8a30d6556ec3b86fb0e6a606f9a9316ac854f3a96f45dd33921ddc9bbf6bca60acd24bd3a264bf9d7096fed5"
+    "dest-filename": "rebuild-bbdbe94c744c90e602b3fd452e249500567b15b8ec5caf9b42ecef88965afa51bb047665d67cf9dbf21c1afc1adec93cd3f7dcde596eb4191b0aad74561f1640"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/chownr/-/chownr-3.0.0.tgz",
+    "sha512": "f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/minipass/-/minipass-7.1.3.tgz",
+    "sha512": "b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz",
+    "sha512": "299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/tar/-/tar-7.5.13.tgz",
+    "sha512": "b4e1bfec6c97a457af857561f2338f26b9ad469393b18a9422455d568a196094bfcfc5a17d0517f112482e67ae24d8a7180312bb5bde06be1ab121c5b79fe19e",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "tar-b4e1bfec6c97a457af857561f2338f26b9ad469393b18a9422455d568a196094bfcfc5a17d0517f112482e67ae24d8a7180312bb5bde06be1ab121c5b79fe19e"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/yallist/-/yallist-5.0.0.tgz",
+    "sha512": "620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f"
   },
   {
     "type": "file",
@@ -841,24 +876,24 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.2.tgz",
-    "sha512": "26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d",
+    "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.3.tgz",
+    "sha512": "30257f7d82446eac7af1a139f24bf6700fe48a4cb51bcbeec77391ebf8db4be8c831effa7c959ad034f3254eddaa28ce598c078b5b76f4595f608f6ecadaa5a4",
     "dest": "flatpak-node/npm",
-    "dest-filename": "brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d"
+    "dest-filename": "brace-expansion-30257f7d82446eac7af1a139f24bf6700fe48a4cb51bcbeec77391ebf8db4be8c831effa7c959ad034f3254eddaa28ce598c078b5b76f4595f608f6ecadaa5a4"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.3.tgz",
-    "sha512": "5564918a2e2dd00166ea2c451662cbc75b7bc12d6087e724a1af3868e79aa46ba6d21f8465dd44844ba6481f997432e710fbae72c541f6807b7312476a9e807e",
+    "url": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.4.tgz",
+    "sha512": "0935ddeab93f337fd42cd423f0506a0561d80556326d0dd53c1c34c462857b7b6e1fbcad4fa0029efce9210dd466d07ccaf50a0b67179f56bec7ee445502e8bc",
     "dest": "flatpak-node/npm",
-    "dest-filename": "fs-extra-5564918a2e2dd00166ea2c451662cbc75b7bc12d6087e724a1af3868e79aa46ba6d21f8465dd44844ba6481f997432e710fbae72c541f6807b7312476a9e807e"
+    "dest-filename": "fs-extra-0935ddeab93f337fd42cd423f0506a0561d80556326d0dd53c1c34c462857b7b6e1fbcad4fa0029efce9210dd466d07ccaf50a0b67179f56bec7ee445502e8bc"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/minimatch/-/minimatch-9.0.5.tgz",
-    "sha512": "1ba4f4657e3cc60a33c7be7cee4a1e5fd62cd8d632e869affff3fcf6c12d7bd57dc2121aa4c345e2274ac675b642d09c2e24d695bff07c269b02d0055a1841a3",
+    "url": "https://registry.npmjs.org/minimatch/-/minimatch-9.0.9.tgz",
+    "sha512": "381c0137d00be1daa61139694b6cdab31faf4de59c956ce46e57d993b2930398f78de38e373fed4429d9a26532bcd83cdf02f966ff52b3a1cc2570202fc47662",
     "dest": "flatpak-node/npm",
-    "dest-filename": "minimatch-1ba4f4657e3cc60a33c7be7cee4a1e5fd62cd8d632e869affff3fcf6c12d7bd57dc2121aa4c345e2274ac675b642d09c2e24d695bff07c269b02d0055a1841a3"
+    "dest-filename": "minimatch-381c0137d00be1daa61139694b6cdab31faf4de59c956ce46e57d993b2930398f78de38e373fed4429d9a26532bcd83cdf02f966ff52b3a1cc2570202fc47662"
   },
   {
     "type": "file",
@@ -901,6 +936,13 @@
     "sha512": "6b0d6035ac96a5d23f8d2615833379a4bd1c7f3534d864f7341a5e4ff0d76f1d7fd71ed92b114f77d6f0af3ca0c7faa2c08422275b30ff30fca98fe446f9461c",
     "dest": "flatpak-node/npm",
     "dest-filename": "config-array-6b0d6035ac96a5d23f8d2615833379a4bd1c7f3534d864f7341a5e4ff0d76f1d7fd71ed92b114f77d6f0af3ca0c7faa2c08422275b30ff30fca98fe446f9461c"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz",
+    "sha512": "27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f"
   },
   {
     "type": "file",
@@ -1016,20 +1058,6 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/@isaacs/balanced-match/-/balanced-match-4.0.1.tgz",
-    "sha512": "cb3313b7d9446fc1afef3462a148a54a0948d1cd2c999f64e43eb9ebbec32d62ed589697212dc2a9c1b250507260a967523e939232d5b39e1f065ebe4e21900d",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "balanced-match-cb3313b7d9446fc1afef3462a148a54a0948d1cd2c999f64e43eb9ebbec32d62ed589697212dc2a9c1b250507260a967523e939232d5b39e1f065ebe4e21900d"
-  },
-  {
-    "type": "file",
-    "url": "https://registry.npmjs.org/@isaacs/brace-expansion/-/brace-expansion-5.0.0.tgz",
-    "sha512": "653e790432d5d32bf44419b673332267e4aa0863bb02f98e3371bfc36c6154f1feb5ed1a2a0163981bc694bd5d1feaa5dad8063b7315adb6f78c22b2be9827c4",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "brace-expansion-653e790432d5d32bf44419b673332267e4aa0863bb02f98e3371bfc36c6154f1feb5ed1a2a0163981bc694bd5d1feaa5dad8063b7315adb6f78c22b2be9827c4"
-  },
-  {
-    "type": "file",
     "url": "https://registry.npmjs.org/@isaacs/cliui/-/cliui-8.0.2.tgz",
     "sha512": "3bc8dc8da6d76a578e1bd0d0d3e0115d66414df9cfe16340ab3ba224aee5978e009b118abff2763384cf8f18d8df39c109fbc15c5cee726d6dc1dc85c9b16a10",
     "dest": "flatpak-node/npm",
@@ -1065,10 +1093,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-7.1.2.tgz",
-    "sha512": "826046b25a68409b609cc02f395a86669133f5dca82930b3cb69dfcff9fc68816137f8c213fac299cc5a6c1ea338e1d5fb458d9f294ec5ac4140f4af71692584",
+    "url": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-7.2.0.tgz",
+    "sha512": "c833cc363a785b27d80641e78c844b7dc6b58ba28cc860adb1582829eff3d7eeafba481a10d76018166df9998a3dce206afbc46793a01df1ddadace180dc86ef",
     "dest": "flatpak-node/npm",
-    "dest-filename": "strip-ansi-826046b25a68409b609cc02f395a86669133f5dca82930b3cb69dfcff9fc68816137f8c213fac299cc5a6c1ea338e1d5fb458d9f294ec5ac4140f4af71692584"
+    "dest-filename": "strip-ansi-c833cc363a785b27d80641e78c844b7dc6b58ba28cc860adb1582829eff3d7eeafba481a10d76018166df9998a3dce206afbc46793a01df1ddadace180dc86ef"
   },
   {
     "type": "file",
@@ -1083,13 +1111,6 @@
     "sha512": "c209bd1219768e97aa3f7cf0ffb9a8de4447169e4c10386a01dc32d5f4c69070309e418e56c829bd084bf01e67d6a95bd358d5de7fdb23465f669e65580d64e3",
     "dest": "flatpak-node/npm",
     "dest-filename": "fs-minipass-c209bd1219768e97aa3f7cf0ffb9a8de4447169e4c10386a01dc32d5f4c69070309e418e56c829bd084bf01e67d6a95bd358d5de7fdb23465f669e65580d64e3"
-  },
-  {
-    "type": "file",
-    "url": "https://registry.npmjs.org/minipass/-/minipass-7.1.2.tgz",
-    "sha512": "a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "minipass-a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b"
   },
   {
     "type": "file",
@@ -1678,6 +1699,13 @@
     "sha512": "c35704b9fdd2f83acb0902fb113ea4cfe82694975babd27bc970928cafce6423c0faa10dd56c85e1901fd186096b8fec84726b6b6b7f77fafc495e098bec7ef1",
     "dest": "flatpak-node/npm",
     "dest-filename": "filelist-c35704b9fdd2f83acb0902fb113ea4cfe82694975babd27bc970928cafce6423c0faa10dd56c85e1901fd186096b8fec84726b6b6b7f77fafc495e098bec7ef1"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.2.tgz",
+    "sha512": "26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d"
   },
   {
     "type": "file",
@@ -2374,10 +2402,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/@turbowarp/paper/-/paper-0.12.202505131813.tgz",
-    "sha512": "a612df43da09bd766fae70136f144307cd2b79a4b50498813b840519f38f908209ce7e35451f93531c0d65d090064a13a67300fa37ebea8d4b32ee99bd6d91f5",
+    "url": "https://registry.npmjs.org/@turbowarp/paper/-/paper-0.13.0.tgz",
+    "sha512": "1028b12e736e23aa0eda12cbb5efa2e9675166fa3c99c4e09263099dafec8bfec95f3bb4ff3edea18cd641be3cf815952a3ef8efe02b04f36f0b8df0162bf3fd",
     "dest": "flatpak-node/npm",
-    "dest-filename": "paper-a612df43da09bd766fae70136f144307cd2b79a4b50498813b840519f38f908209ce7e35451f93531c0d65d090064a13a67300fa37ebea8d4b32ee99bd6d91f5"
+    "dest-filename": "paper-1028b12e736e23aa0eda12cbb5efa2e9675166fa3c99c4e09263099dafec8bfec95f3bb4ff3edea18cd641be3cf815952a3ef8efe02b04f36f0b8df0162bf3fd"
   },
   {
     "type": "file",
@@ -2465,10 +2493,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/@types/debug/-/debug-4.1.12.tgz",
-    "sha512": "bc80a159d546dcb1b548cc44bc8fc02be15626d865aea953bbb7dbae5cb04e491a38dc24fd40066942d74657fcbe4cc504b566d3390c742aae84be5a3a38573d",
+    "url": "https://registry.npmjs.org/@types/debug/-/debug-4.1.13.tgz",
+    "sha512": "2925609909b33303e59ad9633a899aca847cf56e05ca70808b713c3cfb3bbe60d53def38853faf18f2a425f4e19265ecd31d2301a6bd53cb96f1b6dfc92d9f5b",
     "dest": "flatpak-node/npm",
-    "dest-filename": "debug-bc80a159d546dcb1b548cc44bc8fc02be15626d865aea953bbb7dbae5cb04e491a38dc24fd40066942d74657fcbe4cc504b566d3390c742aae84be5a3a38573d"
+    "dest-filename": "debug-2925609909b33303e59ad9633a899aca847cf56e05ca70808b713c3cfb3bbe60d53def38853faf18f2a425f4e19265ecd31d2301a6bd53cb96f1b6dfc92d9f5b"
   },
   {
     "type": "file",
@@ -2717,10 +2745,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/@xmldom/xmldom/-/xmldom-0.8.11.tgz",
-    "sha512": "710cd60ad3ba0bc4d0898975aee28d9f653a028e28e1604171b2fad72265f38c7e8f9b0e596154f57ec3a4d0fc5d91b775a0e9a52b2280c75f008976ba940147",
+    "url": "https://registry.npmjs.org/@xmldom/xmldom/-/xmldom-0.8.12.tgz",
+    "sha512": "f64fe01c5ea7fe9022ffdb6aaf79b76aa92e88da2c613bab2cb52d73bc50f6cc41ff09bb58fca00aff0661aea64b47cb2441e1a8c0b5013621cfef94fe5447aa",
     "dest": "flatpak-node/npm",
-    "dest-filename": "xmldom-710cd60ad3ba0bc4d0898975aee28d9f653a028e28e1604171b2fad72265f38c7e8f9b0e596154f57ec3a4d0fc5d91b775a0e9a52b2280c75f008976ba940147"
+    "dest-filename": "xmldom-f64fe01c5ea7fe9022ffdb6aaf79b76aa92e88da2c613bab2cb52d73bc50f6cc41ff09bb58fca00aff0661aea64b47cb2441e1a8c0b5013621cfef94fe5447aa"
   },
   {
     "type": "file",
@@ -2808,10 +2836,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/app-builder-lib/-/app-builder-lib-26.4.0.tgz",
-    "sha512": "51ab3a84d7bdf4accfdf13d6c61e4b1a51fc9162158d98b1ce63091cd07dfba84fc83a6373b3503245608b5eab403769085cb6d99539b29f28c3bb6f8de32061",
+    "url": "https://registry.npmjs.org/app-builder-lib/-/app-builder-lib-26.8.1.tgz",
+    "sha512": "a74226fc3c790b8b66cfc404135627e0c92e3c2f0fae79519de3215898fb0415d07cd4c952c84cfdba7796eb1d12c0dbbef7c96695d69d87ac8122efc2d33667",
     "dest": "flatpak-node/npm",
-    "dest-filename": "app-builder-lib-51ab3a84d7bdf4accfdf13d6c61e4b1a51fc9162158d98b1ce63091cd07dfba84fc83a6373b3503245608b5eab403769085cb6d99539b29f28c3bb6f8de32061"
+    "dest-filename": "app-builder-lib-a74226fc3c790b8b66cfc404135627e0c92e3c2f0fae79519de3215898fb0415d07cd4c952c84cfdba7796eb1d12c0dbbef7c96695d69d87ac8122efc2d33667"
   },
   {
     "type": "file",
@@ -2822,10 +2850,24 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/isexe/-/isexe-3.1.1.tgz",
-    "sha512": "2e907fe7807eff627986a43b8a66477dd537d4e96042ac7b6627159649bd93383dff0f0628b11c15f265fedec30840ee78ec81003eb3082c133ba173b3436811",
+    "url": "https://registry.npmjs.org/@electron/get/-/get-3.1.0.tgz",
+    "sha512": "17e9ca734c56fa455b051845cda3203f2dcac26b8d4d85f57f1ebe171c684a7360c185fa2c3ec02814d6914d0c43a201a1eeddcf4ebd08d911ebbdec3c082409",
     "dest": "flatpak-node/npm",
-    "dest-filename": "isexe-2e907fe7807eff627986a43b8a66477dd537d4e96042ac7b6627159649bd93383dff0f0628b11c15f265fedec30840ee78ec81003eb3082c133ba173b3436811"
+    "dest-filename": "get-17e9ca734c56fa455b051845cda3203f2dcac26b8d4d85f57f1ebe171c684a7360c185fa2c3ec02814d6914d0c43a201a1eeddcf4ebd08d911ebbdec3c082409"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/ci-info/-/ci-info-4.3.1.tgz",
+    "sha512": "59dcb6220bbc39c069236a5978f679a168cf0b7f2d983571e562945cac252d8900d28ce8f39b0bb0bbe405b067fec65a482305386649d787ef5bdb79fddee474",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "ci-info-59dcb6220bbc39c069236a5978f679a168cf0b7f2d983571e562945cac252d8900d28ce8f39b0bb0bbe405b067fec65a482305386649d787ef5bdb79fddee474"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/isexe/-/isexe-3.1.5.tgz",
+    "sha512": "e81ded2ed16ab504b87a46abbcb54c67e5fe565bd07a46dee2d69491ffeb8553b777f874336adf0119bfa572dc3c4b238ccb0582b1604ab85023171256b073f3",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "isexe-e81ded2ed16ab504b87a46abbcb54c67e5fe565bd07a46dee2d69491ffeb8553b777f874336adf0119bfa572dc3c4b238ccb0582b1604ab85023171256b073f3"
   },
   {
     "type": "file",
@@ -3396,10 +3438,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/builder-util/-/builder-util-26.3.4.tgz",
-    "sha512": "6919fcf2660c92d1f1cdda83305e80ca3d2b2a85fe668809ef90a4ed1ac8a9b63f69dd0706f9d2db1038b877f3ac6af90f668b2f7bd4e8e0441f8a7428c5765d",
+    "url": "https://registry.npmjs.org/builder-util/-/builder-util-26.8.1.tgz",
+    "sha512": "a66d654d86c6c9cf740c78020ceedea3c465e04a8a2dc89ac8d6d9a86ce2aa71fd8eb94a7bc640346762b722d953ea49875e9d7f38c0c76c50abd31cb883c4b7",
     "dest": "flatpak-node/npm",
-    "dest-filename": "builder-util-6919fcf2660c92d1f1cdda83305e80ca3d2b2a85fe668809ef90a4ed1ac8a9b63f69dd0706f9d2db1038b877f3ac6af90f668b2f7bd4e8e0441f8a7428c5765d"
+    "dest-filename": "builder-util-a66d654d86c6c9cf740c78020ceedea3c465e04a8a2dc89ac8d6d9a86ce2aa71fd8eb94a7bc640346762b722d953ea49875e9d7f38c0c76c50abd31cb883c4b7"
   },
   {
     "type": "file",
@@ -3529,10 +3571,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/ci-info/-/ci-info-4.3.1.tgz",
-    "sha512": "59dcb6220bbc39c069236a5978f679a168cf0b7f2d983571e562945cac252d8900d28ce8f39b0bb0bbe405b067fec65a482305386649d787ef5bdb79fddee474",
+    "url": "https://registry.npmjs.org/ci-info/-/ci-info-4.4.0.tgz",
+    "sha512": "efb3d2c1eadc09953615ce2c5fde1e17c93c3f1b5ee890302f8fc80992c58c92ea7a0b3b902b80b2aaa3ffbd0d405e93bc3a6016392e6d0076156d9965d76f42",
     "dest": "flatpak-node/npm",
-    "dest-filename": "ci-info-59dcb6220bbc39c069236a5978f679a168cf0b7f2d983571e562945cac252d8900d28ce8f39b0bb0bbe405b067fec65a482305386649d787ef5bdb79fddee474"
+    "dest-filename": "ci-info-efb3d2c1eadc09953615ce2c5fde1e17c93c3f1b5ee890302f8fc80992c58c92ea7a0b3b902b80b2aaa3ffbd0d405e93bc3a6016392e6d0076156d9965d76f42"
   },
   {
     "type": "file",
@@ -4131,10 +4173,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/dmg-builder/-/dmg-builder-26.4.0.tgz",
-    "sha512": "71ee0e827b3854c7a2b08b8248ad02eb6ba61b4945cb4d768ddf0b319eb0fef78751e5f87ea7c3ac67be1d35802c01302ba27028ff9d84fbe2ce102b48eb056e",
+    "url": "https://registry.npmjs.org/dmg-builder/-/dmg-builder-26.8.1.tgz",
+    "sha512": "8253098274eb7a8f0214836e8ed0210a037de9002a0290cc67c565d6bf1fd104fc429aef0b550296d57809c5a3db46282322d9c7a214b24689674355f1fa2472",
     "dest": "flatpak-node/npm",
-    "dest-filename": "dmg-builder-71ee0e827b3854c7a2b08b8248ad02eb6ba61b4945cb4d768ddf0b319eb0fef78751e5f87ea7c3ac67be1d35802c01302ba27028ff9d84fbe2ce102b48eb056e"
+    "dest-filename": "dmg-builder-8253098274eb7a8f0214836e8ed0210a037de9002a0290cc67c565d6bf1fd104fc429aef0b550296d57809c5a3db46282322d9c7a214b24689674355f1fa2472"
   },
   {
     "type": "file",
@@ -4376,31 +4418,31 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/electron/-/electron-40.0.0.tgz",
-    "sha512": "532072e72274ff09b880dba00ad34f8ef75d8c0927313b974766821e2a1789c1fb68a44a18304fa78c6a4c48bf76855c07747e30ddf07d4f68f1dffda7080ad8",
+    "url": "https://registry.npmjs.org/electron/-/electron-41.1.0.tgz",
+    "sha512": "d17445cb146a7ad9aab64901bd5fbec066c7609edb0fef9fe848095bccbd917e293d16a0c2598a0edcea5d984a8aed03210a699b7b17c731d62bd1983fdd4e29",
     "dest": "flatpak-node/npm",
-    "dest-filename": "electron-532072e72274ff09b880dba00ad34f8ef75d8c0927313b974766821e2a1789c1fb68a44a18304fa78c6a4c48bf76855c07747e30ddf07d4f68f1dffda7080ad8"
+    "dest-filename": "electron-d17445cb146a7ad9aab64901bd5fbec066c7609edb0fef9fe848095bccbd917e293d16a0c2598a0edcea5d984a8aed03210a699b7b17c731d62bd1983fdd4e29"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/electron-builder/-/electron-builder-26.4.0.tgz",
-    "sha512": "14252abddab60142cbf836f64941a08ce6136eb8243f166d0a3a886469e31fda76f694d6c9eb10a8121fbd004a6ba7b0a9d7bceda5a5e3d9ff5b223f372501a2",
+    "url": "https://registry.npmjs.org/electron-builder/-/electron-builder-26.8.1.tgz",
+    "sha512": "b96871d6bef8346a426a01b450bb3f3fd36abf69eca28fbb7a8e1f2d4381f0bf0c75696dabda1d5bfbae2d73050831a73da7e49d82d9823357d1920547339003",
     "dest": "flatpak-node/npm",
-    "dest-filename": "electron-builder-14252abddab60142cbf836f64941a08ce6136eb8243f166d0a3a886469e31fda76f694d6c9eb10a8121fbd004a6ba7b0a9d7bceda5a5e3d9ff5b223f372501a2"
+    "dest-filename": "electron-builder-b96871d6bef8346a426a01b450bb3f3fd36abf69eca28fbb7a8e1f2d4381f0bf0c75696dabda1d5bfbae2d73050831a73da7e49d82d9823357d1920547339003"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/electron-builder-squirrel-windows/-/electron-builder-squirrel-windows-26.4.0.tgz",
-    "sha512": "eddbda958dfcc41cd635aa0e278b2acb6686204a65d92d602cf924074307bb51eee71290f368a5d662921655ece9f2e95d4b28fcd9b28dd1c69521c34681bcff",
+    "url": "https://registry.npmjs.org/electron-builder-squirrel-windows/-/electron-builder-squirrel-windows-26.8.1.tgz",
+    "sha512": "a36f3c7c87603cb1c0efa783ac50031cfa28ed5c869030986cb5751b39dd68c480541a19ac6bccf66d887a175c54ccdd019276795f5b8328acb105c7bf9b46cc",
     "dest": "flatpak-node/npm",
-    "dest-filename": "electron-builder-squirrel-windows-eddbda958dfcc41cd635aa0e278b2acb6686204a65d92d602cf924074307bb51eee71290f368a5d662921655ece9f2e95d4b28fcd9b28dd1c69521c34681bcff"
+    "dest-filename": "electron-builder-squirrel-windows-a36f3c7c87603cb1c0efa783ac50031cfa28ed5c869030986cb5751b39dd68c480541a19ac6bccf66d887a175c54ccdd019276795f5b8328acb105c7bf9b46cc"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/electron-publish/-/electron-publish-26.3.4.tgz",
-    "sha512": "e7fa2e0cf6fbdd290ab9acb61178ac3c6eb42d315330d1d6a3658bacae460e986758af540becb362bcd57b2763d3bf189385945e2d3e4da699b0d77a66de64fc",
+    "url": "https://registry.npmjs.org/electron-publish/-/electron-publish-26.8.1.tgz",
+    "sha512": "abe8eb493221fc2bf878665aee8551fa0ac4268fc5a0b3180409d22f9182b6ac14a6bd53f9580a07f767d699f3c48c6a0fc4bf8cfd728a54fd56bc02a88351e3",
     "dest": "flatpak-node/npm",
-    "dest-filename": "electron-publish-e7fa2e0cf6fbdd290ab9acb61178ac3c6eb42d315330d1d6a3658bacae460e986758af540becb362bcd57b2763d3bf189385945e2d3e4da699b0d77a66de64fc"
+    "dest-filename": "electron-publish-abe8eb493221fc2bf878665aee8551fa0ac4268fc5a0b3180409d22f9182b6ac14a6bd53f9580a07f767d699f3c48c6a0fc4bf8cfd728a54fd56bc02a88351e3"
   },
   {
     "type": "file",
@@ -6007,13 +6049,6 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/chownr/-/chownr-3.0.0.tgz",
-    "sha512": "f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa"
-  },
-  {
-    "type": "file",
     "url": "https://registry.npmjs.org/fs-minipass/-/fs-minipass-3.0.3.tgz",
     "sha512": "5d4040f570a51db9c95927c1ce3926e91bcfb32837b2bc99b74e81110a17705ec42bfc6919a41826040a0c94941f948667be98ee9171d500675f3d3dad4e456f",
     "dest": "flatpak-node/npm",
@@ -6035,13 +6070,6 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz",
-    "sha512": "299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397"
-  },
-  {
-    "type": "file",
     "url": "https://registry.npmjs.org/p-map/-/p-map-7.0.4.tgz",
     "sha512": "b64010130f32b0cce6921830f24fb553f88f856361ca42a74a4e11779ccba0f242b8968644fa3a629a2cad981ac472b30c774359666f13f4a4ee1b0bd97fc2a5",
     "dest": "flatpak-node/npm",
@@ -6056,13 +6084,6 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/tar/-/tar-7.5.2.tgz",
-    "sha512": "ecdcb1ad313802787c926f22132ee8d1060fb3ed092814e3e596aa1e0e81dfd7ab2e0d2a6173770628ed4a1c1bb0d4af43e2cdef9f8a57e0b8411fdfe86c27a6",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "tar-ecdcb1ad313802787c926f22132ee8d1060fb3ed092814e3e596aa1e0e81dfd7ab2e0d2a6173770628ed4a1c1bb0d4af43e2cdef9f8a57e0b8411fdfe86c27a6"
-  },
-  {
-    "type": "file",
     "url": "https://registry.npmjs.org/unique-filename/-/unique-filename-4.0.0.tgz",
     "sha512": "5d29c47b05e643ebde3fbc57d9d4b9438c9902f3b8d1c04dd8c5a427b0ffeac5b80e0eb060137033556b9f3d45847e4075e2c89545d123d7b6f33d58662ef535",
     "dest": "flatpak-node/npm",
@@ -6074,13 +6095,6 @@
     "sha512": "f4e75aa8ee64c2a47ed645601c086ca79bcf354d219f145adbaac114d7cd80ceccea936d8337819f7b3fc5bc8240bddd723cce6ad71e7fa5141e907fe8c6844e",
     "dest": "flatpak-node/npm",
     "dest-filename": "unique-slug-f4e75aa8ee64c2a47ed645601c086ca79bcf354d219f145adbaac114d7cd80ceccea936d8337819f7b3fc5bc8240bddd723cce6ad71e7fa5141e907fe8c6844e"
-  },
-  {
-    "type": "file",
-    "url": "https://registry.npmjs.org/yallist/-/yallist-5.0.0.tgz",
-    "sha512": "620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f"
   },
   {
     "type": "file",
@@ -6252,10 +6266,24 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/minimatch/-/minimatch-10.1.1.tgz",
-    "sha512": "7a722f2ef440159617273902606e512a63dfac502b74bbfe47e95b439dc198830b22bcbbe1b8cacd7ea21c09bc5986a626485248469bad63790fded79ca39b8d",
+    "url": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.4.tgz",
+    "sha512": "a118d3c3ff7b69304dd111db60276d1753107efbac488050334219120ce5eb8dbafbc8d20b49c5d5afc69a754ba5f07dcb2afa83a153a96aa26556f1aed68222",
     "dest": "flatpak-node/npm",
-    "dest-filename": "minimatch-7a722f2ef440159617273902606e512a63dfac502b74bbfe47e95b439dc198830b22bcbbe1b8cacd7ea21c09bc5986a626485248469bad63790fded79ca39b8d"
+    "dest-filename": "minimatch-a118d3c3ff7b69304dd111db60276d1753107efbac488050334219120ce5eb8dbafbc8d20b49c5d5afc69a754ba5f07dcb2afa83a153a96aa26556f1aed68222"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/balanced-match/-/balanced-match-4.0.4.tgz",
+    "sha512": "04bae011c453c17da8ea01b118e08dc8cbc64a9df96287ee633c3d87520c4d198aaadb40659554ebb6dd6fd3ebdaf50703cfa3de2dad25f8cee82ebee26c864c",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "balanced-match-04bae011c453c17da8ea01b118e08dc8cbc64a9df96287ee633c3d87520c4d198aaadb40659554ebb6dd6fd3ebdaf50703cfa3de2dad25f8cee82ebee26c864c"
+  },
+  {
+    "type": "file",
+    "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.5.tgz",
+    "sha512": "559ce72e0b70867f8c69cb7db5f8b0c7ae1f03d7ab1c7fcc0971147c1ff46d7ffa173ea7cb91064d7625b4ca1caa0e31140419b673b70c75965e2f118ae37b71",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "brace-expansion-559ce72e0b70867f8c69cb7db5f8b0c7ae1f03d7ab1c7fcc0971147c1ff46d7ffa173ea7cb91064d7625b4ca1caa0e31140419b673b70c75965e2f118ae37b71"
   },
   {
     "type": "file",
@@ -6448,10 +6476,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/node-abi/-/node-abi-4.24.0.tgz",
-    "sha512": "bb6102d4278d7b6e6e56d5f71196dd436ef973be337599a6a73ac711087668862aa158e58257d4a4e5fd618f39c759e507274428355a4a630d851ecdf36423f0",
+    "url": "https://registry.npmjs.org/node-abi/-/node-abi-4.28.0.tgz",
+    "sha512": "41fa795d92f57090ce69b393f07e609ea31398ce0d8ef6331e9e08fcab7f4a5efa39590e0411d11653eca46574858bcca2a42cca91634ff629eca9b46de5d6f6",
     "dest": "flatpak-node/npm",
-    "dest-filename": "node-abi-bb6102d4278d7b6e6e56d5f71196dd436ef973be337599a6a73ac711087668862aa158e58257d4a4e5fd618f39c759e507274428355a4a630d851ecdf36423f0"
+    "dest-filename": "node-abi-41fa795d92f57090ce69b393f07e609ea31398ce0d8ef6331e9e08fcab7f4a5efa39590e0411d11653eca46574858bcca2a42cca91634ff629eca9b46de5d6f6"
   },
   {
     "type": "file",
@@ -7120,6 +7148,13 @@
   },
   {
     "type": "file",
+    "url": "https://registry.npmjs.org/proper-lockfile/-/proper-lockfile-4.1.2.tgz",
+    "sha512": "4e334f6e537807001631753cb3d004cf82664319c3d4d34bedb34e63f00a533c9a99cdfbf4558049485cfcad692f69e855bf9799928b2faf1c8f32ec88e00c68",
+    "dest": "flatpak-node/npm",
+    "dest-filename": "proper-lockfile-4e334f6e537807001631753cb3d004cf82664319c3d4d34bedb34e63f00a533c9a99cdfbf4558049485cfcad692f69e855bf9799928b2faf1c8f32ec88e00c68"
+  },
+  {
+    "type": "file",
     "url": "https://registry.npmjs.org/prr/-/prr-1.0.1.tgz",
     "sha512": "c8fc384a78358168211d05a3d01dd98205949b8a956cfc0f15c446f0acb1894ec9d8e1c54a8107292f846777efe65d6df42c828a8a7a97f6587966eb82841e8f",
     "dest": "flatpak-node/npm",
@@ -7638,17 +7673,17 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/sanitize-filename/-/sanitize-filename-1.6.3.tgz",
-    "sha512": "cbfe7631ccbb6b0de0466ec8adc183171fdb0a4e00851876788f65b8739033cea766cab0891924ab619e9075c1043f9298f89d73c8b63eab58665fa9589f0e7a",
+    "url": "https://registry.npmjs.org/sanitize-filename/-/sanitize-filename-1.6.4.tgz",
+    "sha512": "f59c88d3c3ecbdd425dabfdb0481ae6e955d477451f6c63a44389614fade036d42fc41654219a0a36d1466536364c31936e6eeb0b840428ce403439de49db512",
     "dest": "flatpak-node/npm",
-    "dest-filename": "sanitize-filename-cbfe7631ccbb6b0de0466ec8adc183171fdb0a4e00851876788f65b8739033cea766cab0891924ab619e9075c1043f9298f89d73c8b63eab58665fa9589f0e7a"
+    "dest-filename": "sanitize-filename-f59c88d3c3ecbdd425dabfdb0481ae6e955d477451f6c63a44389614fade036d42fc41654219a0a36d1466536364c31936e6eeb0b840428ce403439de49db512"
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/sax/-/sax-1.4.3.tgz",
-    "sha512": "caa627d4984f7338a017de03312fac8620cc8c3a3060eeb2f7ec01ff85a03b4635f63598934950e2db86e4a23b923e054e9d70c4f8f92057dcaf3fecd5cde38d",
+    "url": "https://registry.npmjs.org/sax/-/sax-1.6.0.tgz",
+    "sha512": "e91dc9e4ce0071bb4b51d66646fd92ca079568cec886b2d7bbd0669ce1a698009a93c7e252d3ac60d5944b8b8aeeea5b9872016cb05e15e23fff8efb04a2c1cc",
     "dest": "flatpak-node/npm",
-    "dest-filename": "sax-caa627d4984f7338a017de03312fac8620cc8c3a3060eeb2f7ec01ff85a03b4635f63598934950e2db86e4a23b923e054e9d70c4f8f92057dcaf3fecd5cde38d"
+    "dest-filename": "sax-e91dc9e4ce0071bb4b51d66646fd92ca079568cec886b2d7bbd0669ce1a698009a93c7e252d3ac60d5944b8b8aeeea5b9872016cb05e15e23fff8efb04a2c1cc"
   },
   {
     "type": "file",
@@ -7957,13 +7992,6 @@
     "sha512": "b543d7b7394633c144dcfd192fa0d5b3fdcfe7c93d9e4f3f8d97900aead327295003ca856331c57e104992eab21341627ceb10d2e2967a4899e60f30b6bdbc73",
     "dest": "flatpak-node/npm",
     "dest-filename": "pump-b543d7b7394633c144dcfd192fa0d5b3fdcfe7c93d9e4f3f8d97900aead327295003ca856331c57e104992eab21341627ceb10d2e2967a4899e60f30b6bdbc73"
-  },
-  {
-    "type": "file",
-    "url": "https://registry.npmjs.org/@turbowarp/paper/-/paper-0.12.202407262155.tgz",
-    "sha512": "071a0a7e0863a1b11e413f694e18b953544430196e263781990b2f2b14827037d2eaf08317dc9effc7d89acade71e65c3717626be84a6193ebdb5b3dd78946d7",
-    "dest": "flatpak-node/npm",
-    "dest-filename": "paper-071a0a7e0863a1b11e413f694e18b953544430196e263781990b2f2b14827037d2eaf08317dc9effc7d89acade71e65c3717626be84a6193ebdb5b3dd78946d7"
   },
   {
     "type": "file",
@@ -9535,10 +9563,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.3.tgz",
-    "sha512": "e604e680463fb2a2ba8055cb22c40d1f5f6559be1e6cf0cb03849d2cfeddb169085c75a51baea83ee56f5d21853e9a58673f190d9ab475862b6c77c109551bd5",
+    "url": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.4.tgz",
+    "sha512": "40ff3c0402af31a9bfdcdc47eaf8f6a36d51e8c8f165401dea7970012fe99c6bcdf4854ba1c2c7c46608cc5860e9f510fb9b61e8fe1dbf8796f635f70d2223ec",
     "dest": "flatpak-node/npm",
-    "dest-filename": "picomatch-e604e680463fb2a2ba8055cb22c40d1f5f6559be1e6cf0cb03849d2cfeddb169085c75a51baea83ee56f5d21853e9a58673f190d9ab475862b6c77c109551bd5"
+    "dest-filename": "picomatch-40ff3c0402af31a9bfdcdc47eaf8f6a36d51e8c8f165401dea7970012fe99c6bcdf4854ba1c2c7c46608cc5860e9f510fb9b61e8fe1dbf8796f635f70d2223ec"
   },
   {
     "type": "file",
@@ -9745,8 +9773,8 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/extensions.git",
-    "commit": "91cad007c0060155aeb027b83f51bb7b5bfaa414",
-    "dest": "flatpak-node/git/extensions-91cad007c0060155aeb027b83f51bb7b5bfaa414"
+    "commit": "ed577cd42424474e6377e3fc411d54b5034fd7a0",
+    "dest": "flatpak-node/git/extensions-ed577cd42424474e6377e3fc411d54b5034fd7a0"
   },
   {
     "type": "git",
@@ -9769,14 +9797,14 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-blocks.git",
-    "commit": "8d4539ff072aa267c6cd46d77d388e64058b440a",
-    "dest": "flatpak-node/git/scratch-blocks-8d4539ff072aa267c6cd46d77d388e64058b440a"
+    "commit": "d3d1c2c89c0c63d3c16434ba063accd881d487c2",
+    "dest": "flatpak-node/git/scratch-blocks-d3d1c2c89c0c63d3c16434ba063accd881d487c2"
   },
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-paint.git",
-    "commit": "8093bf77b27ad1128cc9e2862b7b5b39e736e178",
-    "dest": "flatpak-node/git/scratch-paint-8093bf77b27ad1128cc9e2862b7b5b39e736e178"
+    "commit": "91d109564917e4df31705611a657e773fb23abbb",
+    "dest": "flatpak-node/git/scratch-paint-91d109564917e4df31705611a657e773fb23abbb"
   },
   {
     "type": "git",
@@ -9817,14 +9845,14 @@
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-vm.git",
-    "commit": "464a9c68dd0be96bbbedd96c25bc83d542c32b0b",
-    "dest": "flatpak-node/git/scratch-vm-464a9c68dd0be96bbbedd96c25bc83d542c32b0b"
+    "commit": "9f2106a290297cd07c75bcde0e2b7163f40053af",
+    "dest": "flatpak-node/git/scratch-vm-9f2106a290297cd07c75bcde0e2b7163f40053af"
   },
   {
     "type": "git",
     "url": "https://github.com/TurboWarp/scratch-gui.git",
-    "commit": "9f967c8c5b8d6675d623eef772fce6ce09995c3e",
-    "dest": "flatpak-node/git/scratch-gui-9f967c8c5b8d6675d623eef772fce6ce09995c3e"
+    "commit": "457e6408db1cf0b5308324061490bcdf746898e5",
+    "dest": "flatpak-node/git/scratch-gui-457e6408db1cf0b5308324061490bcdf746898e5"
   },
   {
     "type": "git",
@@ -9922,6 +9950,8 @@
       "tar -xzf \"flatpak-node/npm/semver-051ed5bc30951cefaadb10445ac9314ba0c9135a919dbec3c7352ba206fbd425a849f89c07162c88019df8a9749a6abf329ac6f7202b464cab4314cee978cccc\" -C \"node_modules/@babel/preset-env/node_modules/semver\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/get/node_modules/semver\"",
       "tar -xzf \"flatpak-node/npm/semver-051ed5bc30951cefaadb10445ac9314ba0c9135a919dbec3c7352ba206fbd425a849f89c07162c88019df8a9749a6abf329ac6f7202b464cab4314cee978cccc\" -C \"node_modules/@electron/get/node_modules/semver\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/semver\"",
+      "tar -xzf \"flatpak-node/npm/semver-051ed5bc30951cefaadb10445ac9314ba0c9135a919dbec3c7352ba206fbd425a849f89c07162c88019df8a9749a6abf329ac6f7202b464cab4314cee978cccc\" -C \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/semver\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/babel-plugin-polyfill-corejs2/node_modules/semver\"",
       "tar -xzf \"flatpak-node/npm/semver-051ed5bc30951cefaadb10445ac9314ba0c9135a919dbec3c7352ba206fbd425a849f89c07162c88019df8a9749a6abf329ac6f7202b464cab4314cee978cccc\" -C \"node_modules/babel-plugin-polyfill-corejs2/node_modules/semver\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-dir/node_modules/semver\"",
@@ -10137,39 +10167,25 @@
       "mkdir -p \"node_modules/@electron/asar\"",
       "tar -xzf \"flatpak-node/npm/asar-8b8feb34f452f38b74bd245ad87a2b7ab1915d6c85e2f4e17c77acc347667161e9f9cb292bbe3751a9c0d2cb80e50e72f24cd8db2e982abbdb2149faf4108088\" -C \"node_modules/@electron/asar\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/asar/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@electron/asar/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@eslint/config-array/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@eslint/config-array/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@eslint/eslintrc/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@eslint/eslintrc/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@turbowarp/extensions/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/minimatch-5608d652c9e74fa9fe35493a799abbef37857695b62d60f33facc51ab09b1d789836e9790f3aa4d871d0e6e147d83356e576e9f3e8d5cda78db7de2cb04125e3\" -C \"node_modules/@electron/asar/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/dir-compare/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/dir-compare/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/eslint/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/eslint/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/glob/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/glob/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/mocha/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/mocha/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/scratch-gui/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/scratch-gui/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-render/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/scratch-gui/node_modules/scratch-render/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/minimatch-5608d652c9e74fa9fe35493a799abbef37857695b62d60f33facc51ab09b1d789836e9790f3aa4d871d0e6e147d83356e576e9f3e8d5cda78db7de2cb04125e3\" -C \"node_modules/dir-compare/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/fuses\"",
-      "tar -xzf \"flatpak-node/npm/fuses-9726f5ccadd81de5948dacfbca22b41a7c523ddbb001228cca20db0ad6e7deca4fe8412df945ad92d82059e846d22705ad7024dc6c2f709e270ab24ed0df4885\" -C \"node_modules/@electron/fuses\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/fuses-dfc868dbbfe6b5457f2e9b19d4b083254a262810525190e4fea047e0534db683797e69e49960dc229e699b52afdc89ea8518ca64ab3b273c7ec1664d300ac7ac\" -C \"node_modules/@electron/fuses\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/get\"",
       "tar -xzf \"flatpak-node/npm/get-424ce9836b3d1a7555d88d818d192c522e375397bafb369031c8e8272d02f82e68c5a2a5f9f99c9060d016d469669655d0d41e92e659fad1b3ec403d4d59d0b5\" -C \"node_modules/@electron/get\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/get/node_modules/fs-extra\"",
       "tar -xzf \"flatpak-node/npm/fs-extra-ca1950800ea69ce25428eb11505b2025d402be42a1733f2d9591b91c141f45e619cb8e8ec0b718f9989ad26b5d1ec3a8f72fe13fe0b130dd1353d431a0eb46e2\" -C \"node_modules/@electron/get/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/fs-extra\"",
+      "tar -xzf \"flatpak-node/npm/fs-extra-ca1950800ea69ce25428eb11505b2025d402be42a1733f2d9591b91c141f45e619cb8e8ec0b718f9989ad26b5d1ec3a8f72fe13fe0b130dd1353d431a0eb46e2\" -C \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/babel-plugin-react-intl/node_modules/fs-extra\"",
       "tar -xzf \"flatpak-node/npm/fs-extra-ca1950800ea69ce25428eb11505b2025d402be42a1733f2d9591b91c141f45e619cb8e8ec0b718f9989ad26b5d1ec3a8f72fe13fe0b130dd1353d431a0eb46e2\" -C \"node_modules/babel-plugin-react-intl/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/fs-extra\"",
       "tar -xzf \"flatpak-node/npm/fs-extra-ca1950800ea69ce25428eb11505b2025d402be42a1733f2d9591b91c141f45e619cb8e8ec0b718f9989ad26b5d1ec3a8f72fe13fe0b130dd1353d431a0eb46e2\" -C \"node_modules/scratch-gui/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/get/node_modules/jsonfile\"",
       "tar -xzf \"flatpak-node/npm/jsonfile-9ba175477cfc8e395fda29901d2d907b3e6c8ca590cdbbae86e27f14a605459bcf1373ee1dc48c559cdfb0b84654e91f776d286cbe5258405ec394a196ab8dc6\" -C \"node_modules/@electron/get/node_modules/jsonfile\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/jsonfile\"",
+      "tar -xzf \"flatpak-node/npm/jsonfile-9ba175477cfc8e395fda29901d2d907b3e6c8ca590cdbbae86e27f14a605459bcf1373ee1dc48c559cdfb0b84654e91f776d286cbe5258405ec394a196ab8dc6\" -C \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/jsonfile\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/babel-plugin-react-intl/node_modules/jsonfile\"",
       "tar -xzf \"flatpak-node/npm/jsonfile-9ba175477cfc8e395fda29901d2d907b3e6c8ca590cdbbae86e27f14a605459bcf1373ee1dc48c559cdfb0b84654e91f776d286cbe5258405ec394a196ab8dc6\" -C \"node_modules/babel-plugin-react-intl/node_modules/jsonfile\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-winstaller/node_modules/jsonfile\"",
@@ -10178,6 +10194,8 @@
       "tar -xzf \"flatpak-node/npm/jsonfile-9ba175477cfc8e395fda29901d2d907b3e6c8ca590cdbbae86e27f14a605459bcf1373ee1dc48c559cdfb0b84654e91f776d286cbe5258405ec394a196ab8dc6\" -C \"node_modules/scratch-gui/node_modules/jsonfile\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/get/node_modules/universalify\"",
       "tar -xzf \"flatpak-node/npm/universalify-ac125e2390970259b2d6957eeb5ed607d27add4e9771acc71c5d9fd9d6c98b1e17ce9505d114b765b8f414620e080bdae4ffddfc604e61a002435c3ed1acd492\" -C \"node_modules/@electron/get/node_modules/universalify\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/universalify\"",
+      "tar -xzf \"flatpak-node/npm/universalify-ac125e2390970259b2d6957eeb5ed607d27add4e9771acc71c5d9fd9d6c98b1e17ce9505d114b765b8f414620e080bdae4ffddfc604e61a002435c3ed1acd492\" -C \"node_modules/app-builder-lib/node_modules/@electron/get/node_modules/universalify\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/babel-plugin-react-intl/node_modules/universalify\"",
       "tar -xzf \"flatpak-node/npm/universalify-ac125e2390970259b2d6957eeb5ed607d27add4e9771acc71c5d9fd9d6c98b1e17ce9505d114b765b8f414620e080bdae4ffddfc604e61a002435c3ed1acd492\" -C \"node_modules/babel-plugin-react-intl/node_modules/universalify\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-winstaller/node_modules/universalify\"",
@@ -10197,25 +10215,69 @@
       "mkdir -p \"node_modules/@electron/osx-sign/node_modules/isbinaryfile\"",
       "tar -xzf \"flatpak-node/npm/isbinaryfile-887aea7b9b21bc151c15b999abdcce40706878e85926ee91406ac3a4181e9d49bf026f85dc9336320423fab2b767ad357f3acbe602d95ad00f1f638169255ccb\" -C \"node_modules/@electron/osx-sign/node_modules/isbinaryfile\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/rebuild\"",
-      "tar -xzf \"flatpak-node/npm/rebuild-88c1976fa21bec7fd0deff81299268113805f60e8a30d6556ec3b86fb0e6a606f9a9316ac854f3a96f45dd33921ddc9bbf6bca60acd24bd3a264bf9d7096fed5\" -C \"node_modules/@electron/rebuild\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/rebuild-bbdbe94c744c90e602b3fd452e249500567b15b8ec5caf9b42ecef88965afa51bb047665d67cf9dbf21c1afc1adec93cd3f7dcde596eb4191b0aad74561f1640\" -C \"node_modules/@electron/rebuild\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@electron/rebuild/node_modules/chownr\"",
+      "tar -xzf \"flatpak-node/npm/chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa\" -C \"node_modules/@electron/rebuild/node_modules/chownr\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/chownr\"",
+      "tar -xzf \"flatpak-node/npm/chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa\" -C \"node_modules/app-builder-lib/node_modules/chownr\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/make-fetch-happen/node_modules/chownr\"",
+      "tar -xzf \"flatpak-node/npm/chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa\" -C \"node_modules/make-fetch-happen/node_modules/chownr\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/node-gyp/node_modules/chownr\"",
+      "tar -xzf \"flatpak-node/npm/chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa\" -C \"node_modules/node-gyp/node_modules/chownr\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@electron/rebuild/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/@electron/rebuild/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@isaacs/fs-minipass/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/@isaacs/fs-minipass/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/app-builder-lib/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/make-fetch-happen/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/make-fetch-happen/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/minipass-fetch/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/minipass-fetch/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/node-gyp/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/node-gyp/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/path-scurry/node_modules/minipass\"",
+      "tar -xzf \"flatpak-node/npm/minipass-b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0\" -C \"node_modules/path-scurry/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@electron/rebuild/node_modules/minizlib\"",
+      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/@electron/rebuild/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/minizlib\"",
+      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/app-builder-lib/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/make-fetch-happen/node_modules/minizlib\"",
+      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/make-fetch-happen/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/minipass-fetch/node_modules/minizlib\"",
+      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/minipass-fetch/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/node-gyp/node_modules/minizlib\"",
+      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/node-gyp/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@electron/rebuild/node_modules/tar\"",
+      "tar -xzf \"flatpak-node/npm/tar-b4e1bfec6c97a457af857561f2338f26b9ad469393b18a9422455d568a196094bfcfc5a17d0517f112482e67ae24d8a7180312bb5bde06be1ab121c5b79fe19e\" -C \"node_modules/@electron/rebuild/node_modules/tar\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/tar\"",
+      "tar -xzf \"flatpak-node/npm/tar-b4e1bfec6c97a457af857561f2338f26b9ad469393b18a9422455d568a196094bfcfc5a17d0517f112482e67ae24d8a7180312bb5bde06be1ab121c5b79fe19e\" -C \"node_modules/app-builder-lib/node_modules/tar\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/make-fetch-happen/node_modules/tar\"",
+      "tar -xzf \"flatpak-node/npm/tar-b4e1bfec6c97a457af857561f2338f26b9ad469393b18a9422455d568a196094bfcfc5a17d0517f112482e67ae24d8a7180312bb5bde06be1ab121c5b79fe19e\" -C \"node_modules/make-fetch-happen/node_modules/tar\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/node-gyp/node_modules/tar\"",
+      "tar -xzf \"flatpak-node/npm/tar-b4e1bfec6c97a457af857561f2338f26b9ad469393b18a9422455d568a196094bfcfc5a17d0517f112482e67ae24d8a7180312bb5bde06be1ab121c5b79fe19e\" -C \"node_modules/node-gyp/node_modules/tar\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@electron/rebuild/node_modules/yallist\"",
+      "tar -xzf \"flatpak-node/npm/yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f\" -C \"node_modules/@electron/rebuild/node_modules/yallist\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/yallist\"",
+      "tar -xzf \"flatpak-node/npm/yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f\" -C \"node_modules/app-builder-lib/node_modules/yallist\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/make-fetch-happen/node_modules/yallist\"",
+      "tar -xzf \"flatpak-node/npm/yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f\" -C \"node_modules/make-fetch-happen/node_modules/yallist\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/node-gyp/node_modules/yallist\"",
+      "tar -xzf \"flatpak-node/npm/yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f\" -C \"node_modules/node-gyp/node_modules/yallist\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/universal\"",
       "tar -xzf \"flatpak-node/npm/universal-5a7f6c3d8215151165e479b030990044209feeba8afc4bab91f43fac9675e261cfde26138d94883925689c40278567805f0b70ef339e90646573ac93b59d2dfa\" -C \"node_modules/@electron/universal\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/universal/node_modules/brace-expansion\"",
-      "tar -xzf \"flatpak-node/npm/brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d\" -C \"node_modules/@electron/universal/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/filelist/node_modules/brace-expansion\"",
-      "tar -xzf \"flatpak-node/npm/brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d\" -C \"node_modules/@turbowarp/extensions/node_modules/filelist/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/filelist/node_modules/brace-expansion\"",
-      "tar -xzf \"flatpak-node/npm/brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d\" -C \"node_modules/filelist/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/brace-expansion-30257f7d82446eac7af1a139f24bf6700fe48a4cb51bcbeec77391ebf8db4be8c831effa7c959ad034f3254eddaa28ce598c078b5b76f4595f608f6ecadaa5a4\" -C \"node_modules/@electron/universal/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/brace-expansion\"",
-      "tar -xzf \"flatpak-node/npm/brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d\" -C \"node_modules/make-fetch-happen/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/brace-expansion-30257f7d82446eac7af1a139f24bf6700fe48a4cb51bcbeec77391ebf8db4be8c831effa7c959ad034f3254eddaa28ce598c078b5b76f4595f608f6ecadaa5a4\" -C \"node_modules/make-fetch-happen/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/universal/node_modules/fs-extra\"",
-      "tar -xzf \"flatpak-node/npm/fs-extra-5564918a2e2dd00166ea2c451662cbc75b7bc12d6087e724a1af3868e79aa46ba6d21f8465dd44844ba6481f997432e710fbae72c541f6807b7312476a9e807e\" -C \"node_modules/@electron/universal/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/fs-extra-0935ddeab93f337fd42cd423f0506a0561d80556326d0dd53c1c34c462857b7b6e1fbcad4fa0029efce9210dd466d07ccaf50a0b67179f56bec7ee445502e8bc\" -C \"node_modules/@electron/universal/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/windows-sign/node_modules/fs-extra\"",
-      "tar -xzf \"flatpak-node/npm/fs-extra-5564918a2e2dd00166ea2c451662cbc75b7bc12d6087e724a1af3868e79aa46ba6d21f8465dd44844ba6481f997432e710fbae72c541f6807b7312476a9e807e\" -C \"node_modules/@electron/windows-sign/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/fs-extra-0935ddeab93f337fd42cd423f0506a0561d80556326d0dd53c1c34c462857b7b6e1fbcad4fa0029efce9210dd466d07ccaf50a0b67179f56bec7ee445502e8bc\" -C \"node_modules/@electron/windows-sign/node_modules/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/universal/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-1ba4f4657e3cc60a33c7be7cee4a1e5fd62cd8d632e869affff3fcf6c12d7bd57dc2121aa4c345e2274ac675b642d09c2e24d695bff07c269b02d0055a1841a3\" -C \"node_modules/@electron/universal/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/minimatch-381c0137d00be1daa61139694b6cdab31faf4de59c956ce46e57d993b2930398f78de38e373fed4429d9a26532bcd83cdf02f966ff52b3a1cc2570202fc47662\" -C \"node_modules/@electron/universal/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-1ba4f4657e3cc60a33c7be7cee4a1e5fd62cd8d632e869affff3fcf6c12d7bd57dc2121aa4c345e2274ac675b642d09c2e24d695bff07c269b02d0055a1841a3\" -C \"node_modules/make-fetch-happen/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/minimatch-381c0137d00be1daa61139694b6cdab31faf4de59c956ce46e57d993b2930398f78de38e373fed4429d9a26532bcd83cdf02f966ff52b3a1cc2570202fc47662\" -C \"node_modules/make-fetch-happen/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@electron/windows-sign\"",
       "tar -xzf \"flatpak-node/npm/windows-sign-75f65ea31eba02f74fb5bda50fc3ac208421d764e9d063424540df04720a1a96e6a2966da36fc0f274a96182e879d3c81e9aa479b959fe4f0e5741b2ecf62ec9\" -C \"node_modules/@electron/windows-sign\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@epic-web/invariant\"",
@@ -10232,6 +10294,24 @@
       "tar -xzf \"flatpak-node/npm/config-array-6b0d6035ac96a5d23f8d2615833379a4bd1c7f3534d864f7341a5e4ff0d76f1d7fd71ed92b114f77d6f0af3ca0c7faa2c08422275b30ff30fca98fe446f9461c\" -C \"node_modules/@eslint/config-array\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/@eslint/config-array\"",
       "tar -xzf \"flatpak-node/npm/config-array-6b0d6035ac96a5d23f8d2615833379a4bd1c7f3534d864f7341a5e4ff0d76f1d7fd71ed92b114f77d6f0af3ca0c7faa2c08422275b30ff30fca98fe446f9461c\" -C \"node_modules/@turbowarp/extensions/node_modules/@eslint/config-array\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@eslint/config-array/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@eslint/config-array/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@eslint/eslintrc/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@eslint/eslintrc/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/@turbowarp/extensions/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/eslint/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/eslint/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/glob/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/glob/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/mocha/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/mocha/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/scratch-gui/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/scratch-gui/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-render/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/scratch-gui/node_modules/scratch-render/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/minimatch\"",
+      "tar -xzf \"flatpak-node/npm/minimatch-27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@eslint/config-helpers\"",
       "tar -xzf \"flatpak-node/npm/config-helpers-801af137cf203887f747b8dae4af6c97035ac9571980ae923943919b6b81cd378811f79568884ea42b53a31dcfe91ee8da32c5c0b1532e70bb914fd119c60483\" -C \"node_modules/@eslint/config-helpers\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/@eslint/config-helpers\"",
@@ -10310,10 +10390,6 @@
       "tar -xzf \"flatpak-node/npm/retry-6d5d13828f4ae217cf09e93e68c027f35469a452afdb248341e328499baf4c04b2c0d4e7549080ac2644d855aaa6f21ab4abbb54c44b5a547511acef5610f285\" -C \"node_modules/@humanwhocodes/retry\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/@humanwhocodes/retry\"",
       "tar -xzf \"flatpak-node/npm/retry-6d5d13828f4ae217cf09e93e68c027f35469a452afdb248341e328499baf4c04b2c0d4e7549080ac2644d855aaa6f21ab4abbb54c44b5a547511acef5610f285\" -C \"node_modules/@turbowarp/extensions/node_modules/@humanwhocodes/retry\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@isaacs/balanced-match\"",
-      "tar -xzf \"flatpak-node/npm/balanced-match-cb3313b7d9446fc1afef3462a148a54a0948d1cd2c999f64e43eb9ebbec32d62ed589697212dc2a9c1b250507260a967523e939232d5b39e1f065ebe4e21900d\" -C \"node_modules/@isaacs/balanced-match\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@isaacs/brace-expansion\"",
-      "tar -xzf \"flatpak-node/npm/brace-expansion-653e790432d5d32bf44419b673332267e4aa0863bb02f98e3371bfc36c6154f1feb5ed1a2a0163981bc694bd5d1feaa5dad8063b7315adb6f78c22b2be9827c4\" -C \"node_modules/@isaacs/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@isaacs/cliui\"",
       "tar -xzf \"flatpak-node/npm/cliui-3bc8dc8da6d76a578e1bd0d0d3e0115d66414df9cfe16340ab3ba224aee5978e009b118abff2763384cf8f18d8df39c109fbc15c5cee726d6dc1dc85c9b16a10\" -C \"node_modules/@isaacs/cliui\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@isaacs/cliui/node_modules/ansi-regex\"",
@@ -10325,21 +10401,11 @@
       "mkdir -p \"node_modules/@isaacs/cliui/node_modules/string-width\"",
       "tar -xzf \"flatpak-node/npm/string-width-1e72ce091def8dc63c6dea0d2ed723679fe7c67d9a7e6304ea586b0eb79ba24a8c6a9f976de5bc9fd4d7a4f0cea9d18ae6a708de84f418a4d6eb00bb10c895a8\" -C \"node_modules/@isaacs/cliui/node_modules/string-width\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@isaacs/cliui/node_modules/strip-ansi\"",
-      "tar -xzf \"flatpak-node/npm/strip-ansi-826046b25a68409b609cc02f395a86669133f5dca82930b3cb69dfcff9fc68816137f8c213fac299cc5a6c1ea338e1d5fb458d9f294ec5ac4140f4af71692584\" -C \"node_modules/@isaacs/cliui/node_modules/strip-ansi\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/strip-ansi-c833cc363a785b27d80641e78c844b7dc6b58ba28cc860adb1582829eff3d7eeafba481a10d76018166df9998a3dce206afbc46793a01df1ddadace180dc86ef\" -C \"node_modules/@isaacs/cliui/node_modules/strip-ansi\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@isaacs/cliui/node_modules/wrap-ansi\"",
       "tar -xzf \"flatpak-node/npm/wrap-ansi-b22ed0588eb350cab9e9b11216f6a0b66ccc7463ada317d1f927b3d753286df73bb66f9591472493d6d6d9479f7d319551b3a4b31992c34000da0b3c83bd4d09\" -C \"node_modules/@isaacs/cliui/node_modules/wrap-ansi\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@isaacs/fs-minipass\"",
       "tar -xzf \"flatpak-node/npm/fs-minipass-c209bd1219768e97aa3f7cf0ffb9a8de4447169e4c10386a01dc32d5f4c69070309e418e56c829bd084bf01e67d6a95bd358d5de7fdb23465f669e65580d64e3\" -C \"node_modules/@isaacs/fs-minipass\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/@isaacs/fs-minipass/node_modules/minipass\"",
-      "tar -xzf \"flatpak-node/npm/minipass-a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b\" -C \"node_modules/@isaacs/fs-minipass/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/make-fetch-happen/node_modules/minipass\"",
-      "tar -xzf \"flatpak-node/npm/minipass-a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b\" -C \"node_modules/make-fetch-happen/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/minipass-fetch/node_modules/minipass\"",
-      "tar -xzf \"flatpak-node/npm/minipass-a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b\" -C \"node_modules/minipass-fetch/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/node-gyp/node_modules/minipass\"",
-      "tar -xzf \"flatpak-node/npm/minipass-a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b\" -C \"node_modules/node-gyp/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/path-scurry/node_modules/minipass\"",
-      "tar -xzf \"flatpak-node/npm/minipass-a8e3b34b57014d6605e011fc7d578f0c138ef62a6d327194119c0d73f70c5a74d5da754b67b56835610f1e461ccd9034a5da00edd97a7bb14beb9f675fd4b66b\" -C \"node_modules/path-scurry/node_modules/minipass\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@jridgewell/gen-mapping\"",
       "tar -xzf \"flatpak-node/npm/gen-mapping-da492dffb9e227a32010fc45d1b61d43a7ad65a03e7d0bc370b29c921cb5c8840ecdaa0a8c10634a3eb7fda2d58d8137aa146de5dbccfae5327c283a50a0816c\" -C \"node_modules/@jridgewell/gen-mapping\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@jridgewell/remapping\"",
@@ -10722,6 +10788,10 @@
       "tar -xzf \"flatpak-node/npm/filelist-c35704b9fdd2f83acb0902fb113ea4cfe82694975babd27bc970928cafce6423c0faa10dd56c85e1901fd186096b8fec84726b6b6b7f77fafc495e098bec7ef1\" -C \"node_modules/@turbowarp/extensions/node_modules/filelist\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/filelist\"",
       "tar -xzf \"flatpak-node/npm/filelist-c35704b9fdd2f83acb0902fb113ea4cfe82694975babd27bc970928cafce6423c0faa10dd56c85e1901fd186096b8fec84726b6b6b7f77fafc495e098bec7ef1\" -C \"node_modules/filelist\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/filelist/node_modules/brace-expansion\"",
+      "tar -xzf \"flatpak-node/npm/brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d\" -C \"node_modules/@turbowarp/extensions/node_modules/filelist/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/filelist/node_modules/brace-expansion\"",
+      "tar -xzf \"flatpak-node/npm/brace-expansion-26dd2f1f233e8e6501aa88c1ec4d4d21869db74bc8d10c63c5dd9312b5bde300f3f84d8b026e6f28c5d7c20e996414c73ee5250e0407297be318175f705d590d\" -C \"node_modules/filelist/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/filelist/node_modules/minimatch\"",
       "tar -xzf \"flatpak-node/npm/minimatch-94ac15ff56eba46ea6054147b5becd526b400426f65996669b6c0d88e0398406fc55d092e01dddb4c5b2bdca1589c730016fc23844635cbb74ccfd735d4376ea\" -C \"node_modules/@turbowarp/extensions/node_modules/filelist/node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/filelist/node_modules/minimatch\"",
@@ -11537,9 +11607,11 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/@turbowarp/nanolog\"",
       "tar -xzf \"flatpak-node/npm/nanolog-b5ec5c33da317c4b000d59550d1e5484b9187253cab15f66cad261fbda471e89cd714af1455185e859094f358efc797935a7d4d5cad2770ef7ee7a8a1376ad48\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/@turbowarp/nanolog\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/paper\"",
-      "tar -xzf \"flatpak-node/npm/paper-a612df43da09bd766fae70136f144307cd2b79a4b50498813b840519f38f908209ce7e35451f93531c0d65d090064a13a67300fa37ebea8d4b32ee99bd6d91f5\" -C \"node_modules/@turbowarp/paper\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/paper-1028b12e736e23aa0eda12cbb5efa2e9675166fa3c99c4e09263099dafec8bfec95f3bb4ff3edea18cd641be3cf815952a3ef8efe02b04f36f0b8df0162bf3fd\" -C \"node_modules/@turbowarp/paper\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/@turbowarp/paper\"",
-      "tar -xzf \"flatpak-node/npm/paper-a612df43da09bd766fae70136f144307cd2b79a4b50498813b840519f38f908209ce7e35451f93531c0d65d090064a13a67300fa37ebea8d4b32ee99bd6d91f5\" -C \"node_modules/scratch-gui/node_modules/@turbowarp/paper\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/paper-1028b12e736e23aa0eda12cbb5efa2e9675166fa3c99c4e09263099dafec8bfec95f3bb4ff3edea18cd641be3cf815952a3ef8efe02b04f36f0b8df0162bf3fd\" -C \"node_modules/scratch-gui/node_modules/@turbowarp/paper\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/@turbowarp/paper\"",
+      "tar -xzf \"flatpak-node/npm/paper-1028b12e736e23aa0eda12cbb5efa2e9675166fa3c99c4e09263099dafec8bfec95f3bb4ff3edea18cd641be3cf815952a3ef8efe02b04f36f0b8df0162bf3fd\" -C \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/@turbowarp/paper\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@turbowarp/sb3fix\"",
       "tar -xzf \"flatpak-node/npm/sb3fix-a4a47225b65818714040d69cc09128cf9b21f129d20d114595ed41704a3264746e0c4ffd4d9a0114d7d8ce8ca328278ec8e052b5c4bc9261a16a4e3961a6da0e\" -C \"node_modules/@turbowarp/sb3fix\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/@turbowarp/sb3fix\"",
@@ -11595,7 +11667,7 @@
       "mkdir -p \"node_modules/@types/cacheable-request\"",
       "tar -xzf \"flatpak-node/npm/cacheable-request-210dc46d3cc6c488a06f5237a8f65cd6b5899c7d019922afe506136a5130c1e16fc810cb4807b6e333f495efe1ca2ede7067d9565215020e0166a6fc581c0aab\" -C \"node_modules/@types/cacheable-request\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@types/debug\"",
-      "tar -xzf \"flatpak-node/npm/debug-bc80a159d546dcb1b548cc44bc8fc02be15626d865aea953bbb7dbae5cb04e491a38dc24fd40066942d74657fcbe4cc504b566d3390c742aae84be5a3a38573d\" -C \"node_modules/@types/debug\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/debug-2925609909b33303e59ad9633a899aca847cf56e05ca70808b713c3cfb3bbe60d53def38853faf18f2a425f4e19265ecd31d2301a6bd53cb96f1b6dfc92d9f5b\" -C \"node_modules/@types/debug\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@types/fs-extra\"",
       "tar -xzf \"flatpak-node/npm/fs-extra-9c49f007efb5bb99550ccd94238735fb947e15868a7da0334b83a87287229a3566de7430dd3bb31f950db2872b71305b8677ab6e5c878f8038f6a5db22265da4\" -C \"node_modules/@types/fs-extra\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@types/http-cache-semantics\"",
@@ -11749,7 +11821,7 @@
       "mkdir -p \"node_modules/@webpack-cli/serve\"",
       "tar -xzf \"flatpak-node/npm/serve-a319c23468fcf1f2fec7357e75a717b38e07703c1fd68becdc0b84cef3fb9aa5f0edf427b6a2214350519b29e1e2a10a412492452595c974639936d9217f55d9\" -C \"node_modules/@webpack-cli/serve\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@xmldom/xmldom\"",
-      "tar -xzf \"flatpak-node/npm/xmldom-710cd60ad3ba0bc4d0898975aee28d9f653a028e28e1604171b2fad72265f38c7e8f9b0e596154f57ec3a4d0fc5d91b775a0e9a52b2280c75f008976ba940147\" -C \"node_modules/@xmldom/xmldom\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/xmldom-f64fe01c5ea7fe9022ffdb6aaf79b76aa92e88da2c613bab2cb52d73bc50f6cc41ff09bb58fca00aff0661aea64b47cb2441e1a8c0b5013621cfef94fe5447aa\" -C \"node_modules/@xmldom/xmldom\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/@xtuc/ieee754\"",
       "tar -xzf \"flatpak-node/npm/ieee754-0d7f272a0a9c1b0b1cd1e252a98b799703f80c7e459479e6b96581472ed7d0d71a191d19b6ec9e11280cc1361512dc66b0d198faa8ade10613fcc2184ce4cf78\" -C \"node_modules/@xtuc/ieee754\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/@xtuc/ieee754\"",
@@ -11799,13 +11871,17 @@
       "mkdir -p \"node_modules/app-builder-bin\"",
       "tar -xzf \"flatpak-node/npm/app-builder-bin-8fcee8d23e8ba8f2f7411afcca277a73e4ede600bbc4d7d8a3ab90210928ac00ba32979ac95319ac40f32a6249fc796fec49ce4296919b9de4ea4b43619c81eb\" -C \"node_modules/app-builder-bin\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/app-builder-lib\"",
-      "tar -xzf \"flatpak-node/npm/app-builder-lib-51ab3a84d7bdf4accfdf13d6c61e4b1a51fc9162158d98b1ce63091cd07dfba84fc83a6373b3503245608b5eab403769085cb6d99539b29f28c3bb6f8de32061\" -C \"node_modules/app-builder-lib\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/app-builder-lib-a74226fc3c790b8b66cfc404135627e0c92e3c2f0fae79519de3215898fb0415d07cd4c952c84cfdba7796eb1d12c0dbbef7c96695d69d87ac8122efc2d33667\" -C \"node_modules/app-builder-lib\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/app-builder-lib/node_modules/@electron/fuses\"",
       "tar -xzf \"flatpak-node/npm/fuses-cf1d0422aefc5a563f9416f5b97973899983648e2e6dc09720c278b868d7cd95b49d2d7d4e348f7973c08f3cd398a425254666d126e66613ca3fbb6e4354ac13\" -C \"node_modules/app-builder-lib/node_modules/@electron/fuses\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/@electron/get\"",
+      "tar -xzf \"flatpak-node/npm/get-17e9ca734c56fa455b051845cda3203f2dcac26b8d4d85f57f1ebe171c684a7360c185fa2c3ec02814d6914d0c43a201a1eeddcf4ebd08d911ebbdec3c082409\" -C \"node_modules/app-builder-lib/node_modules/@electron/get\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/app-builder-lib/node_modules/ci-info\"",
+      "tar -xzf \"flatpak-node/npm/ci-info-59dcb6220bbc39c069236a5978f679a168cf0b7f2d983571e562945cac252d8900d28ce8f39b0bb0bbe405b067fec65a482305386649d787ef5bdb79fddee474\" -C \"node_modules/app-builder-lib/node_modules/ci-info\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/app-builder-lib/node_modules/isexe\"",
-      "tar -xzf \"flatpak-node/npm/isexe-2e907fe7807eff627986a43b8a66477dd537d4e96042ac7b6627159649bd93383dff0f0628b11c15f265fedec30840ee78ec81003eb3082c133ba173b3436811\" -C \"node_modules/app-builder-lib/node_modules/isexe\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/isexe-e81ded2ed16ab504b87a46abbcb54c67e5fe565bd07a46dee2d69491ffeb8553b777f874336adf0119bfa572dc3c4b238ccb0582b1604ab85023171256b073f3\" -C \"node_modules/app-builder-lib/node_modules/isexe\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/node-gyp/node_modules/isexe\"",
-      "tar -xzf \"flatpak-node/npm/isexe-2e907fe7807eff627986a43b8a66477dd537d4e96042ac7b6627159649bd93383dff0f0628b11c15f265fedec30840ee78ec81003eb3082c133ba173b3436811\" -C \"node_modules/node-gyp/node_modules/isexe\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/isexe-e81ded2ed16ab504b87a46abbcb54c67e5fe565bd07a46dee2d69491ffeb8553b777f874336adf0119bfa572dc3c4b238ccb0582b1604ab85023171256b073f3\" -C \"node_modules/node-gyp/node_modules/isexe\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/app-builder-lib/node_modules/which\"",
       "tar -xzf \"flatpak-node/npm/which-244746cc7c3092b6d6a063a5207a90e60b69aca18e7a7a431e9c44f73551d5b59b3ad611c8f3c731ef4568feb1eb50a635a4d385291bd03009b5ee630fe0e6cd\" -C \"node_modules/app-builder-lib/node_modules/which\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/node-gyp/node_modules/which\"",
@@ -12343,7 +12419,7 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/buffer-xor\"",
       "tar -xzf \"flatpak-node/npm/buffer-xor-e7bd6cd13ee76562babc1ebb1c8e5dc9417bc1788d71f68f3cf4e5eb3602340a4036322f6094e0ee196e77ff9c269740852edd573a8c2e67e17c7477ac070e8d\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/buffer-xor\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/builder-util\"",
-      "tar -xzf \"flatpak-node/npm/builder-util-6919fcf2660c92d1f1cdda83305e80ca3d2b2a85fe668809ef90a4ed1ac8a9b63f69dd0706f9d2db1038b877f3ac6af90f668b2f7bd4e8e0441f8a7428c5765d\" -C \"node_modules/builder-util\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/builder-util-a66d654d86c6c9cf740c78020ceedea3c465e04a8a2dc89ac8d6d9a86ce2aa71fd8eb94a7bc640346762b722d953ea49875e9d7f38c0c76c50abd31cb883c4b7\" -C \"node_modules/builder-util\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/builder-util-runtime\"",
       "tar -xzf \"flatpak-node/npm/builder-util-runtime-aade35b4c7e01d39658517aca8ce437271f20c858d8331efb98da30dc60ff62686a645b14d4cd5e864230de2e7951d7f0ed76572c5906c0eec0723299891532d\" -C \"node_modules/builder-util-runtime\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/builtin-status-codes\"",
@@ -12429,7 +12505,7 @@
       "mkdir -p \"node_modules/chromium-pickle-js\"",
       "tar -xzf \"flatpak-node/npm/chromium-pickle-js-d51e45868fa306ad030f276dfbfbc75a3e4a24d24229d01128e0b06547a7f3823906b796a0ba912c0347d54f3b789cb5b620123ed3271aa249ab466c2e844f3b\" -C \"node_modules/chromium-pickle-js\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/ci-info\"",
-      "tar -xzf \"flatpak-node/npm/ci-info-59dcb6220bbc39c069236a5978f679a168cf0b7f2d983571e562945cac252d8900d28ce8f39b0bb0bbe405b067fec65a482305386649d787ef5bdb79fddee474\" -C \"node_modules/ci-info\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/ci-info-efb3d2c1eadc09953615ce2c5fde1e17c93c3f1b5ee890302f8fc80992c58c92ea7a0b3b902b80b2aaa3ffbd0d405e93bc3a6016392e6d0076156d9965d76f42\" -C \"node_modules/ci-info\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/cipher-base\"",
       "tar -xzf \"flatpak-node/npm/cipher-base-dc493d1f75faa63e5381e9d762d35675a0689f5b6060269e6ddf973e0d247b28c46c47e40f82a4980c6443f8b5bd8bf175c4f99ec70b05fabd5494660817054b\" -C \"node_modules/cipher-base\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/cipher-base\"",
@@ -12943,7 +13019,7 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/dir-glob\"",
       "tar -xzf \"flatpak-node/npm/dir-glob-5a4ad6a7d191e0a5df28663338b993b86562d545857f0b37efb9fd71ce79fed6fa0eeab217aa5c43901b88712c85a0e963dbfaa1a4abd9708389d1a633077320\" -C \"node_modules/scratch-gui/node_modules/dir-glob\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/dmg-builder\"",
-      "tar -xzf \"flatpak-node/npm/dmg-builder-71ee0e827b3854c7a2b08b8248ad02eb6ba61b4945cb4d768ddf0b319eb0fef78751e5f87ea7c3ac67be1d35802c01302ba27028ff9d84fbe2ce102b48eb056e\" -C \"node_modules/dmg-builder\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/dmg-builder-8253098274eb7a8f0214836e8ed0210a037de9002a0290cc67c565d6bf1fd104fc429aef0b550296d57809c5a3db46282322d9c7a214b24689674355f1fa2472\" -C \"node_modules/dmg-builder\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/dmg-license\"",
       "tar -xzf \"flatpak-node/npm/dmg-license-65dce6ab02a6102396269a9e7e5a02e4e272d7e599041b1ee7e311f3ccfd83d667e1563e598524032a239a1cc97241f961b6d919c608b86024639fd8b3938cd9\" -C \"node_modules/dmg-license\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/dom-helpers\"",
@@ -13095,13 +13171,13 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/ecc-jsbn\"",
       "tar -xzf \"flatpak-node/npm/ecc-jsbn-7a1f4efa1c111cd6c6e012d38c49779f0d38e029069b95fa2e86827fb2cfa7b514f10aede3b258362ea73d7f318d6f7b4ca18a9b5a2e72d834412a597bdaab9f\" -C \"node_modules/scratch-gui/node_modules/ecc-jsbn\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron\"",
-      "tar -xzf \"flatpak-node/npm/electron-532072e72274ff09b880dba00ad34f8ef75d8c0927313b974766821e2a1789c1fb68a44a18304fa78c6a4c48bf76855c07747e30ddf07d4f68f1dffda7080ad8\" -C \"node_modules/electron\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/electron-d17445cb146a7ad9aab64901bd5fbec066c7609edb0fef9fe848095bccbd917e293d16a0c2598a0edcea5d984a8aed03210a699b7b17c731d62bd1983fdd4e29\" -C \"node_modules/electron\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-builder\"",
-      "tar -xzf \"flatpak-node/npm/electron-builder-14252abddab60142cbf836f64941a08ce6136eb8243f166d0a3a886469e31fda76f694d6c9eb10a8121fbd004a6ba7b0a9d7bceda5a5e3d9ff5b223f372501a2\" -C \"node_modules/electron-builder\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/electron-builder-b96871d6bef8346a426a01b450bb3f3fd36abf69eca28fbb7a8e1f2d4381f0bf0c75696dabda1d5bfbae2d73050831a73da7e49d82d9823357d1920547339003\" -C \"node_modules/electron-builder\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-builder-squirrel-windows\"",
-      "tar -xzf \"flatpak-node/npm/electron-builder-squirrel-windows-eddbda958dfcc41cd635aa0e278b2acb6686204a65d92d602cf924074307bb51eee71290f368a5d662921655ece9f2e95d4b28fcd9b28dd1c69521c34681bcff\" -C \"node_modules/electron-builder-squirrel-windows\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/electron-builder-squirrel-windows-a36f3c7c87603cb1c0efa783ac50031cfa28ed5c869030986cb5751b39dd68c480541a19ac6bccf66d887a175c54ccdd019276795f5b8328acb105c7bf9b46cc\" -C \"node_modules/electron-builder-squirrel-windows\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-publish\"",
-      "tar -xzf \"flatpak-node/npm/electron-publish-e7fa2e0cf6fbdd290ab9acb61178ac3c6eb42d315330d1d6a3658bacae460e986758af540becb362bcd57b2763d3bf189385945e2d3e4da699b0d77a66de64fc\" -C \"node_modules/electron-publish\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/electron-publish-abe8eb493221fc2bf878665aee8551fa0ac4268fc5a0b3180409d22f9182b6ac14a6bd53f9580a07f767d699f3c48c6a0fc4bf8cfd728a54fd56bc02a88351e3\" -C \"node_modules/electron-publish\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-to-chromium\"",
       "tar -xzf \"flatpak-node/npm/electron-to-chromium-ac50b144ec3b68e7b8b8f4df200c7ead7bfd704706c7e6ee005e27a6786d4ea0899392831519e1dfe2988fbadd561ea5b05b79fda3ecf88ae3f6b677dd6300ef\" -C \"node_modules/electron-to-chromium\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-winstaller\"",
@@ -14204,38 +14280,20 @@
       "tar -xzf \"flatpak-node/npm/fs-ff11a57b323ac5f18ef4dc2e2659f0cff2b5e2a0f59024801ad69c0479c6cde008b8919acdca78e4a3f936ec80457a0a6fb730ba5006595b1b792c5d1bf71bd1\" -C \"node_modules/make-fetch-happen/node_modules/@npmcli/fs\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/cacache\"",
       "tar -xzf \"flatpak-node/npm/cacache-85db14c6e9570a2e524c877bf2f455604b43023abdf48080524b4b4de4d8b0ba1313a67c752d1cf2958d0b1c1dae4f587c97a86c365cd98d7cea10ffe5942015\" -C \"node_modules/make-fetch-happen/node_modules/cacache\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/make-fetch-happen/node_modules/chownr\"",
-      "tar -xzf \"flatpak-node/npm/chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa\" -C \"node_modules/make-fetch-happen/node_modules/chownr\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/node-gyp/node_modules/chownr\"",
-      "tar -xzf \"flatpak-node/npm/chownr-f88c7363d05939077f5ee60f466aef1158c5fe7aa3e64813e2412aed5a1fac3a0cd4cc6846311692b082dc4b4b8b9f5355ac314c09fea2b27015072ba84375fa\" -C \"node_modules/node-gyp/node_modules/chownr\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/fs-minipass\"",
       "tar -xzf \"flatpak-node/npm/fs-minipass-5d4040f570a51db9c95927c1ce3926e91bcfb32837b2bc99b74e81110a17705ec42bfc6919a41826040a0c94941f948667be98ee9171d500675f3d3dad4e456f\" -C \"node_modules/make-fetch-happen/node_modules/fs-minipass\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/glob\"",
       "tar -xzf \"flatpak-node/npm/glob-0df5cdf037e127b347dce7bb7059aedcd0aed7029b911789f13a2bcd20056d22ab94d69048a7c8cea62a558f3395bb3634b05b5a9462539d865f63db68154d92\" -C \"node_modules/make-fetch-happen/node_modules/glob\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/minipass-collect\"",
       "tar -xzf \"flatpak-node/npm/minipass-collect-0fb57c3cef686b3ecf5862db0800ae235a843acabb50a7cba2dc7f0b401eb78ddf09407fc1f43b0d87aada847fb2f1491980c73ebdfc48701379a8ff6682872b\" -C \"node_modules/make-fetch-happen/node_modules/minipass-collect\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/make-fetch-happen/node_modules/minizlib\"",
-      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/make-fetch-happen/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/minipass-fetch/node_modules/minizlib\"",
-      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/minipass-fetch/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/node-gyp/node_modules/minizlib\"",
-      "tar -xzf \"flatpak-node/npm/minizlib-299c58a350549160f64d514baf4310a0cf2f5148a0583dcb943f376bfef906a0bee2a1341dbd55a39bf516071f68d5ef7d7cebfb912143a8a783f09a0628d397\" -C \"node_modules/node-gyp/node_modules/minizlib\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/p-map\"",
       "tar -xzf \"flatpak-node/npm/p-map-b64010130f32b0cce6921830f24fb553f88f856361ca42a74a4e11779ccba0f242b8968644fa3a629a2cad981ac472b30c774359666f13f4a4ee1b0bd97fc2a5\" -C \"node_modules/make-fetch-happen/node_modules/p-map\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/ssri\"",
       "tar -xzf \"flatpak-node/npm/ssri-4bb886368b1ea71f5169d5fcda88a6524bebd02b7b22325b11bb38989713c6cb7cba6f79277b03614d510443af76eea82f559e9363832398b8300c3e759e9c01\" -C \"node_modules/make-fetch-happen/node_modules/ssri\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/make-fetch-happen/node_modules/tar\"",
-      "tar -xzf \"flatpak-node/npm/tar-ecdcb1ad313802787c926f22132ee8d1060fb3ed092814e3e596aa1e0e81dfd7ab2e0d2a6173770628ed4a1c1bb0d4af43e2cdef9f8a57e0b8411fdfe86c27a6\" -C \"node_modules/make-fetch-happen/node_modules/tar\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/node-gyp/node_modules/tar\"",
-      "tar -xzf \"flatpak-node/npm/tar-ecdcb1ad313802787c926f22132ee8d1060fb3ed092814e3e596aa1e0e81dfd7ab2e0d2a6173770628ed4a1c1bb0d4af43e2cdef9f8a57e0b8411fdfe86c27a6\" -C \"node_modules/node-gyp/node_modules/tar\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/unique-filename\"",
       "tar -xzf \"flatpak-node/npm/unique-filename-5d29c47b05e643ebde3fbc57d9d4b9438c9902f3b8d1c04dd8c5a427b0ffeac5b80e0eb060137033556b9f3d45847e4075e2c89545d123d7b6f33d58662ef535\" -C \"node_modules/make-fetch-happen/node_modules/unique-filename\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/make-fetch-happen/node_modules/unique-slug\"",
       "tar -xzf \"flatpak-node/npm/unique-slug-f4e75aa8ee64c2a47ed645601c086ca79bcf354d219f145adbaac114d7cd80ceccea936d8337819f7b3fc5bc8240bddd723cce6ad71e7fa5141e907fe8c6844e\" -C \"node_modules/make-fetch-happen/node_modules/unique-slug\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/make-fetch-happen/node_modules/yallist\"",
-      "tar -xzf \"flatpak-node/npm/yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f\" -C \"node_modules/make-fetch-happen/node_modules/yallist\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/node-gyp/node_modules/yallist\"",
-      "tar -xzf \"flatpak-node/npm/yallist-620bd44dfc2ac9ced45d532b07e4889ac5584a64d2f17fed4abb5d35930898cfa7efe413ae2457c978a6d2606b4d735eab3545d0a5868073de8b2562145acd0f\" -C \"node_modules/node-gyp/node_modules/yallist\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/map-cache\"",
       "tar -xzf \"flatpak-node/npm/map-cache-f32fde57d4106428b29f54a9ad74ab0a6a89374c8d4404def8f3bccedc2aaefadb7512c0dde609174c9a47461ac8b5a431bb1048a592f4dda03dc18473852c66\" -C \"node_modules/map-cache\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/map-cache\"",
@@ -14351,7 +14409,11 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/minimalistic-crypto-utils\"",
       "tar -xzf \"flatpak-node/npm/minimalistic-crypto-utils-2486256edea0f22e6329f277c73eeb1742d79afd93903c412d492205e67b6c0c781a79cd32bf311691a73b19fa1a14c41f1dd28d1ad912853e8f4e29ad7d64b6\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/minimalistic-crypto-utils\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/minimatch\"",
-      "tar -xzf \"flatpak-node/npm/minimatch-7a722f2ef440159617273902606e512a63dfac502b74bbfe47e95b439dc198830b22bcbbe1b8cacd7ea21c09bc5986a626485248469bad63790fded79ca39b8d\" -C \"node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/minimatch-a118d3c3ff7b69304dd111db60276d1753107efbac488050334219120ce5eb8dbafbc8d20b49c5d5afc69a754ba5f07dcb2afa83a153a96aa26556f1aed68222\" -C \"node_modules/minimatch\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/minimatch/node_modules/balanced-match\"",
+      "tar -xzf \"flatpak-node/npm/balanced-match-04bae011c453c17da8ea01b118e08dc8cbc64a9df96287ee633c3d87520c4d198aaadb40659554ebb6dd6fd3ebdaf50703cfa3de2dad25f8cee82ebee26c864c\" -C \"node_modules/minimatch/node_modules/balanced-match\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/minimatch/node_modules/brace-expansion\"",
+      "tar -xzf \"flatpak-node/npm/brace-expansion-559ce72e0b70867f8c69cb7db5f8b0c7ae1f03d7ab1c7fcc0971147c1ff46d7ffa173ea7cb91064d7625b4ca1caa0e31140419b673b70c75965e2f118ae37b71\" -C \"node_modules/minimatch/node_modules/brace-expansion\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/minimist\"",
       "tar -xzf \"flatpak-node/npm/minimist-db2c8047ca8190ddd8ba17896a7529582e54ddb6f9a2c0f2c0d07c4730d5943c031dba1c009bdeaaa8f5bbcf92543ee39164f8cafb070a95aaa96a80c5bd3308\" -C \"node_modules/minimist\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-blocks/node_modules/minimist\"",
@@ -14501,7 +14563,7 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/neo-async\"",
       "tar -xzf \"flatpak-node/npm/neo-async-61ddd4112e665824aa47ea8d4fddd2dd4a18524a8067d94b83c6bb83dae29ac5a66062bc7154e8038fec17746bb21772577b0018c5d5526a4c60ec3e74ba4ebb\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/neo-async\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/node-abi\"",
-      "tar -xzf \"flatpak-node/npm/node-abi-bb6102d4278d7b6e6e56d5f71196dd436ef973be337599a6a73ac711087668862aa158e58257d4a4e5fd618f39c759e507274428355a4a630d851ecdf36423f0\" -C \"node_modules/node-abi\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/node-abi-41fa795d92f57090ce69b393f07e609ea31398ce0d8ef6331e9e08fcab7f4a5efa39590e0411d11653eca46574858bcca2a42cca91634ff629eca9b46de5d6f6\" -C \"node_modules/node-abi\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/node-addon-api\"",
       "tar -xzf \"flatpak-node/npm/node-addon-api-89b3cade203ebda6357848c44a442433405b0aa14e6993225d14ed741d2eedbe1d8ed63a267b23bcf7541d5320eb142ddc1f1fa534d61c8f40f800e333d7ebce\" -C \"node_modules/node-addon-api\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/node-api-version\"",
@@ -14902,6 +14964,8 @@
       "tar -xzf \"flatpak-node/npm/prop-types-a23f3b0a064809dba5528868815011ec08e50b4df6ed4e1e9782fa780bcea827ae74c0d553435384d695f9bf437f87578123f58173139cf7617deff6a831f972\" -C \"node_modules/scratch-gui/node_modules/prop-types\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/prop-types\"",
       "tar -xzf \"flatpak-node/npm/prop-types-a23f3b0a064809dba5528868815011ec08e50b4df6ed4e1e9782fa780bcea827ae74c0d553435384d695f9bf437f87578123f58173139cf7617deff6a831f972\" -C \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/prop-types\" --warning=no-unknown-keyword --strip-components=1",
+      "mkdir -p \"node_modules/proper-lockfile\"",
+      "tar -xzf \"flatpak-node/npm/proper-lockfile-4e334f6e537807001631753cb3d004cf82664319c3d4d34bedb34e63f00a533c9a99cdfbf4558049485cfcad692f69e855bf9799928b2faf1c8f32ec88e00c68\" -C \"node_modules/proper-lockfile\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/prr\"",
       "tar -xzf \"flatpak-node/npm/prr-c8fc384a78358168211d05a3d01dd98205949b8a956cfc0f15c446f0acb1894ec9d8e1c54a8107292f846777efe65d6df42c828a8a7a97f6587966eb82841e8f\" -C \"node_modules/prr\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/prr\"",
@@ -15189,9 +15253,9 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/safe-regex\"",
       "tar -xzf \"flatpak-node/npm/safe-regex-6895dc89fe319da354cef52e0b981c6f8ea84d2ef3be0e23a4c4e7baab6b10f951def16be29c6d753c1a17542cdc49e39fd1caf9997042e8be6bbcf44b2c08ce\" -C \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/safe-regex\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/sanitize-filename\"",
-      "tar -xzf \"flatpak-node/npm/sanitize-filename-cbfe7631ccbb6b0de0466ec8adc183171fdb0a4e00851876788f65b8739033cea766cab0891924ab619e9075c1043f9298f89d73c8b63eab58665fa9589f0e7a\" -C \"node_modules/sanitize-filename\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/sanitize-filename-f59c88d3c3ecbdd425dabfdb0481ae6e955d477451f6c63a44389614fade036d42fc41654219a0a36d1466536364c31936e6eeb0b840428ce403439de49db512\" -C \"node_modules/sanitize-filename\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/sax\"",
-      "tar -xzf \"flatpak-node/npm/sax-caa627d4984f7338a017de03312fac8620cc8c3a3060eeb2f7ec01ff85a03b4635f63598934950e2db86e4a23b923e054e9d70c4f8f92057dcaf3fecd5cde38d\" -C \"node_modules/sax\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/sax-e91dc9e4ce0071bb4b51d66646fd92ca079568cec886b2d7bbd0669ce1a698009a93c7e252d3ac60d5944b8b8aeeea5b9872016cb05e15e23fff8efb04a2c1cc\" -C \"node_modules/sax\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scheduler\"",
       "tar -xzf \"flatpak-node/npm/scheduler-9ffcf04564584948f4ff783fa2d28344f321eaabf649831636af392046bc899c80bfca1df730d8a464a7a4112336070c36ae9271bbb929f20fc4d17bd91ff610\" -C \"node_modules/scheduler\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scheduler\"",
@@ -15330,8 +15394,6 @@
       "tar -xzf \"flatpak-node/npm/postcss-simple-vars-c5622e7f106820d26fe8988b6fb8e5e68125829fbaa6e270bd3e73647962512c9da0bcf80c00d10773430ec6207ca570a239f84c32e2b1ea02eb932e4bca061a\" -C \"node_modules/scratch-gui/node_modules/postcss-simple-vars\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/pump\"",
       "tar -xzf \"flatpak-node/npm/pump-b543d7b7394633c144dcfd192fa0d5b3fdcfe7c93d9e4f3f8d97900aead327295003ca856331c57e104992eab21341627ceb10d2e2967a4899e60f30b6bdbc73\" -C \"node_modules/scratch-gui/node_modules/pump\" --warning=no-unknown-keyword --strip-components=1",
-      "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/@turbowarp/paper\"",
-      "tar -xzf \"flatpak-node/npm/paper-071a0a7e0863a1b11e413f694e18b953544430196e263781990b2f2b14827037d2eaf08317dc9effc7d89acade71e65c3717626be84a6193ebdb5b3dd78946d7\" -C \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/@turbowarp/paper\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/classnames\"",
       "tar -xzf \"flatpak-node/npm/classnames-0d3b771a13940ca861e0e3702095b8966872a2d4265762e336518afc9da193051ca9c6ca9022c07493edc509f19e573b491ddfd421170b232673b58b52c59b34\" -C \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/classnames\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint/node_modules/classnames\"",
@@ -16277,7 +16339,7 @@
       "mkdir -p \"node_modules/tinyglobby/node_modules/fdir\"",
       "tar -xzf \"flatpak-node/npm/fdir-b486d8b596ee70eb340511aa3c992c84951874bf920c7edd54cf208f2f84469dd60148cb105244fb4da46a7c87b708d63a7c2b298062c0098cd29e242c90275e\" -C \"node_modules/tinyglobby/node_modules/fdir\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/tinyglobby/node_modules/picomatch\"",
-      "tar -xzf \"flatpak-node/npm/picomatch-e604e680463fb2a2ba8055cb22c40d1f5f6559be1e6cf0cb03849d2cfeddb169085c75a51baea83ee56f5d21853e9a58673f190d9ab475862b6c77c109551bd5\" -C \"node_modules/tinyglobby/node_modules/picomatch\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/picomatch-40ff3c0402af31a9bfdcdc47eaf8f6a36d51e8c8f165401dea7970012fe99c6bcdf4854ba1c2c7c46608cc5860e9f510fb9b61e8fe1dbf8796f635f70d2223ec\" -C \"node_modules/tinyglobby/node_modules/picomatch\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/tmp\"",
       "tar -xzf \"flatpak-node/npm/tmp-be8cb3e8c0296b5ad0194c53dc4f812bbfd139ef22b44c7bbc3f3f1c4bede31c17b9cbd0e46e687848879261d926e04edb546939ff98626f4c3a2be3ef4f63a3\" -C \"node_modules/tmp\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/tmp-promise\"",
@@ -16339,7 +16401,7 @@
       "mkdir -p \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
       "cp -a \"flatpak-node/git/types-tw-938c3ab84e4dd859f6f0646cdf7ed5dd1a94f622\"/* \"node_modules/@turbowarp/extensions/node_modules/@turbowarp/types\"",
       "mkdir -p \"node_modules/@turbowarp/extensions\"",
-      "cp -a \"flatpak-node/git/extensions-91cad007c0060155aeb027b83f51bb7b5bfaa414\"/* \"node_modules/@turbowarp/extensions\"",
+      "cp -a \"flatpak-node/git/extensions-ed577cd42424474e6377e3fc411d54b5034fd7a0\"/* \"node_modules/@turbowarp/extensions\"",
       "mkdir -p \"node_modules/@turbowarp/types\"",
       "cp -a \"flatpak-node/git/types-tw-0cf07a4b9b5fe05bc1766db216d726c5bf373ec7\"/* \"node_modules/@turbowarp/types\"",
       "mkdir -p \"node_modules/scratch-audio\"",
@@ -16349,11 +16411,11 @@
       "mkdir -p \"node_modules/scratch-blocks\"",
       "cp -a \"flatpak-node/git/scratch-blocks-6a7e7e5561f25dce86d4ffe664703a110f5945e7\"/* \"node_modules/scratch-blocks\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-blocks\"",
-      "cp -a \"flatpak-node/git/scratch-blocks-8d4539ff072aa267c6cd46d77d388e64058b440a\"/* \"node_modules/scratch-gui/node_modules/scratch-blocks\"",
+      "cp -a \"flatpak-node/git/scratch-blocks-d3d1c2c89c0c63d3c16434ba063accd881d487c2\"/* \"node_modules/scratch-gui/node_modules/scratch-blocks\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-paint\"",
-      "cp -a \"flatpak-node/git/scratch-paint-8093bf77b27ad1128cc9e2862b7b5b39e736e178\"/* \"node_modules/scratch-gui/node_modules/scratch-paint\"",
+      "cp -a \"flatpak-node/git/scratch-paint-91d109564917e4df31705611a657e773fb23abbb\"/* \"node_modules/scratch-gui/node_modules/scratch-paint\"",
       "mkdir -p \"node_modules/scratch-paint\"",
-      "cp -a \"flatpak-node/git/scratch-paint-8093bf77b27ad1128cc9e2862b7b5b39e736e178\"/* \"node_modules/scratch-paint\"",
+      "cp -a \"flatpak-node/git/scratch-paint-91d109564917e4df31705611a657e773fb23abbb\"/* \"node_modules/scratch-paint\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-parser\"",
       "cp -a \"flatpak-node/git/scratch-parser-5e21d953d58d92672956030b9f93402f11249c96\"/* \"node_modules/scratch-gui/node_modules/scratch-parser\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-render/node_modules/scratch-render-fonts\"",
@@ -16371,11 +16433,11 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/scratch-render-fonts\"",
       "cp -a \"flatpak-node/git/scratch-render-fonts-6be162025085d738317b40a01644cf8dcbcee023\"/* \"node_modules/scratch-gui/node_modules/scratch-vm/node_modules/scratch-render-fonts\"",
       "mkdir -p \"node_modules/scratch-gui/node_modules/scratch-vm\"",
-      "cp -a \"flatpak-node/git/scratch-vm-464a9c68dd0be96bbbedd96c25bc83d542c32b0b\"/* \"node_modules/scratch-gui/node_modules/scratch-vm\"",
+      "cp -a \"flatpak-node/git/scratch-vm-9f2106a290297cd07c75bcde0e2b7163f40053af\"/* \"node_modules/scratch-gui/node_modules/scratch-vm\"",
       "mkdir -p \"node_modules/scratch-vm\"",
-      "cp -a \"flatpak-node/git/scratch-vm-464a9c68dd0be96bbbedd96c25bc83d542c32b0b\"/* \"node_modules/scratch-vm\"",
+      "cp -a \"flatpak-node/git/scratch-vm-9f2106a290297cd07c75bcde0e2b7163f40053af\"/* \"node_modules/scratch-vm\"",
       "mkdir -p \"node_modules/scratch-gui\"",
-      "cp -a \"flatpak-node/git/scratch-gui-9f967c8c5b8d6675d623eef772fce6ce09995c3e\"/* \"node_modules/scratch-gui\"",
+      "cp -a \"flatpak-node/git/scratch-gui-457e6408db1cf0b5308324061490bcdf746898e5\"/* \"node_modules/scratch-gui\"",
       "mkdir -p \"node_modules/scratch-parser\"",
       "cp -a \"flatpak-node/git/scratch-parser-326b4bc5e8177073d57732b8b841bcd36c87f658\"/* \"node_modules/scratch-parser\""
     ],
