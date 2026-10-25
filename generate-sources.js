@@ -153,7 +153,10 @@ const generateNodeDependencies = async (desktopCommit) => {
     };
 
     const visitGitPackage = async (packagePath, pkg) => {
-        const match = pkg.resolved.match(/^git\+ssh:\/\/git@github\.com\/([\w\d-]+)\/([\w\d-]+)\.git#([0-9a-f]{40})$/);
+        const match = (
+            pkg.resolved.match(/^git\+ssh:\/\/git@github\.com\/([\w\d-]+)\/([\w\d-]+)\.git#([0-9a-f]{40})$/) ||
+            pkg.resolved.match(/^git\+https:\/\/github\.com\/([\w\d-]+)\/([\w\d-]+)\.git#([0-9a-f]{40})$/)
+        );
         if (!match) {
             throw new Error(`Unknown git URL: ${pkg.resolved}`);
         }
@@ -215,7 +218,7 @@ const generateNodeDependencies = async (desktopCommit) => {
             const prefixedPath = path.join(context.prefix, pkgPath);
             if (pkg.resolved.startsWith('https://')) {
                 await visitNpmPackage(prefixedPath, pkg);
-            } else if (pkg.resolved.startsWith('git+ssh://')) {
+            } else if (pkg.resolved.startsWith('git+ssh://') || pkg.resolved.startsWith('git+https://')) {
                 await visitGitPackage(prefixedPath, pkg);
             } else {
                 throw new Error(`Unknown resolved: ${pkg.resolved}`);
