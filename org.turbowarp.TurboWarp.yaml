@@ -76,8 +76,7 @@ modules:
           echo "Unknown arch."
           exit 1
         fi
-        export ELECTRON_CACHE=flatpak-electron
-        node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
+        node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.electronDist=flatpak-electron --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
       # Copy app files
       # On x64 the output is linux-unpacked
       # On aarch64 the output is linux-arm64-unpacked
