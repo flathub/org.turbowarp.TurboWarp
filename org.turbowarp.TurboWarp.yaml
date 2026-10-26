@@ -1,15 +1,15 @@
 app-id: org.turbowarp.TurboWarp
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '25.08'
+base-version: '26.08'
 command: turbowarp-desktop
 separate-locales: false
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node24
+  - org.freedesktop.Sdk.Extension.node26
 build-options:
-  append-path: /usr/lib/sdk/node24/bin
+  append-path: /usr/lib/sdk/node26/bin
 finish-args:
   - --share=ipc
   - --share=network
@@ -35,7 +35,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TurboWarp/desktop.git
-        commit: e3501fbec5172f02621842b91eda460673dd2a4c
+        commit: b967ec9d82ae04bc019f41635c1c5f6fc96616f5
       - type: file
         dest-filename: turbowarp-desktop.sh
         path: turbowarp-desktop.sh
@@ -76,8 +76,7 @@ modules:
           echo "Unknown arch."
           exit 1
         fi
-        export ELECTRON_CACHE=flatpak-electron
-        node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
+        node node_modules/electron-builder/cli.js $ARCH_ARGS --linux --dir --publish never --config.electronDist=flatpak-electron --config.extraMetadata.tw_dist="prod-flathub-$FLATPAK_ARCH"
       # Copy app files
       # On x64 the output is linux-unpacked
       # On aarch64 the output is linux-arm64-unpacked
