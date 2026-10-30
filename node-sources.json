@@ -4376,10 +4376,10 @@
   },
   {
     "type": "file",
-    "url": "https://registry.npmjs.org/electron/-/electron-43.8.3.tgz",
-    "sha512": "2a0bd29b76c75f3f7a8525f3ab1c918cb7a58bcd2b21db336c34052a54527dc92619acd33c21ff0b150ddf50e9f5ce6b14a4d048d7fd80f2515a5d7258d077a4",
+    "url": "https://registry.npmjs.org/electron/-/electron-43.8.4.tgz",
+    "sha512": "56dd528a014ed4e7b9657e5a258b6402d19a0785d9162a6bf65e7ae7f821778200fc56090a745ba792363e12aa3caa03244497062b5a2ba34c06497e6d31b2e9",
     "dest": "flatpak-node/npm",
-    "dest-filename": "electron-2a0bd29b76c75f3f7a8525f3ab1c918cb7a58bcd2b21db336c34052a54527dc92619acd33c21ff0b150ddf50e9f5ce6b14a4d048d7fd80f2515a5d7258d077a4"
+    "dest-filename": "electron-56dd528a014ed4e7b9657e5a258b6402d19a0785d9162a6bf65e7ae7f821778200fc56090a745ba792363e12aa3caa03244497062b5a2ba34c06497e6d31b2e9"
   },
   {
     "type": "file",
@@ -12616,7 +12616,7 @@
       "mkdir -p \"node_modules/scratch-gui/node_modules/ecc-jsbn\"",
       "tar -xzf \"flatpak-node/npm/ecc-jsbn-7a1f4efa1c111cd6c6e012d38c49779f0d38e029069b95fa2e86827fb2cfa7b514f10aede3b258362ea73d7f318d6f7b4ca18a9b5a2e72d834412a597bdaab9f\" -C \"node_modules/scratch-gui/node_modules/ecc-jsbn\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron\"",
-      "tar -xzf \"flatpak-node/npm/electron-2a0bd29b76c75f3f7a8525f3ab1c918cb7a58bcd2b21db336c34052a54527dc92619acd33c21ff0b150ddf50e9f5ce6b14a4d048d7fd80f2515a5d7258d077a4\" -C \"node_modules/electron\" --warning=no-unknown-keyword --strip-components=1",
+      "tar -xzf \"flatpak-node/npm/electron-56dd528a014ed4e7b9657e5a258b6402d19a0785d9162a6bf65e7ae7f821778200fc56090a745ba792363e12aa3caa03244497062b5a2ba34c06497e6d31b2e9\" -C \"node_modules/electron\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-builder\"",
       "tar -xzf \"flatpak-node/npm/electron-builder-012808b909ceab846e0fc8cc852f612342d2dc43114f523f33947abadaa27c1fc11cdf3421c0a305db7e0c40fe36634fbe606012dae51315d98ad35d03b9173a\" -C \"node_modules/electron-builder\" --warning=no-unknown-keyword --strip-components=1",
       "mkdir -p \"node_modules/electron-builder-squirrel-windows\"",
